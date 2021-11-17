@@ -1,4 +1,5 @@
-import React from "react"
+import React, { Component } from "react"
+import Header from "./components/Header"
 import {
   BrowserRouter as Router,
   Route,
@@ -6,7 +7,7 @@ import {
 } from 'react-router-dom'
 
 
-class App extends React{
+class App extends Component{
   render () {
     const {
       logged_in,
@@ -17,6 +18,9 @@ class App extends React{
     } = this.props
     return (
       <>
+      <Router>
+      <Header />
+      </Router>
       <h1>Welcome to FlixList</h1>
       </>
     );
