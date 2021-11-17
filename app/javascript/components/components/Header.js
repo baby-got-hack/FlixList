@@ -13,15 +13,17 @@ render(){
       } = this.props
     return(
         <header>
+            <div className="nav-links">
             <NavLink to="/">
-                <img src={pic} alt="flixlist logo"></img>
+                <img id="logo-img" src={pic} alt="flixlist logo"></img>
             </NavLink>
             {!logged_in &&
             <>
-            <a href={sign_in_route}>Login</a>
-            <a href={new_user_route}>Sign Up</a> 
+                <a  href={sign_in_route}>Login</a>
+                <a  href={new_user_route}>Sign Up</a> 
             </>
             }
+            </div>
         </header>
     )
 }
