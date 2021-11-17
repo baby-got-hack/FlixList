@@ -19,7 +19,7 @@ class App extends Component{
     return (
       <>
       <Router>
-      <Header />
+      <Header {...this.props}/>
       </Router>
       <h1>Welcome to FlixList</h1>
       </>
