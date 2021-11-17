@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import pic from "../assets/applogo.png"
+import { NavLink } from 'react-router-dom'
 
 class Header extends Component{
 render(){
@@ -11,7 +13,15 @@ render(){
       } = this.props
     return(
         <header>
-        <a href={sign_in_route}>Login</a>
+            <NavLink to="/">
+                <img src={pic} alt="flixlist logo"></img>
+            </NavLink>
+            {!logged_in &&
+            <>
+            <a href={sign_in_route}>Login</a>
+            <a href={new_user_route}>Sign Up</a> 
+            </>
+            }
         </header>
     )
 }
