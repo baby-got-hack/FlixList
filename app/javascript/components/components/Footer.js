@@ -7,7 +7,7 @@ class Footer extends Component {
       <footer>
         <p>©2021 BabyGotHack</p>
         <NavLink to="/AboutUs">About Us</NavLink>
-        <NavLink to="/Home#faq"></NavLink>
+        <NavLink to="/#faq">FAQs</NavLink>
         <a href="https://www.hollywoodreporter.com/" target="_blank">
           Hollywood News
         </a>
