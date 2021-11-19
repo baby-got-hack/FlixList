@@ -13,7 +13,7 @@ class Home extends Component {
     return (
       <>
         <div className="home-upper">
-          <h1 className="welcometext">This is the home page</h1>
+          <h1>This is the home page</h1>
           <a href={new_user_route}>Sign Up</a>
         </div>
         <div id="faq">

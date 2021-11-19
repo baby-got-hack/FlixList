@@ -21,17 +21,17 @@ class Header extends Component {
 
           {!logged_in && (
             <>
-                <div className="nav-bar">
-              <Button color="primary">
-                <a href={sign_in_route}>
-                  <span>Login</span>
-                </a>
-              </Button>
-              <Button color="primary">
-                <a href={new_user_route}>
-                  <span>Sign Up</span>
-                </a>
-              </Button>
+              <div className="nav-bar">
+                <Button color="primary">
+                  <a href={sign_in_route}>
+                    <span>Login</span>
+                  </a>
+                </Button>
+                <Button color="primary">
+                  <a href={new_user_route}>
+                    <span>Sign Up</span>
+                  </a>
+                </Button>
               </div>
             </>
           )}

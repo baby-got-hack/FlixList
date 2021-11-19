@@ -4,25 +4,10 @@
     top:5px;
     left: 10px;
     position:fixed;
-    height: 150px;
-    width: 150px;
-    
-    
-    
-    
+    height: 100px;
+    width: 100px;
 }
-// .header-container {
-//     position: fixed;
-//    overflow: hidden;
-//   }
-// .nav-bar{
-     
-//         display: flex;
-//         align-items: flex-end;
-//         padding-bottom: 10px;
-      
 
-// }
  .nav-bar{
     display: flex;
     flex-direction: row;
@@ -30,20 +15,11 @@
     margin: 2px;
      justify-content: space-between;
     padding: 0 5% 0 80%;
-// margin: 10px;
-// color: #CFDFEF;
-// display: flex;
-// flex-direction: row;
-// align-items: flex-end;
-// padding-right: 50px;
-// text-decoration: none;
 }
-.welcometext{
-    padding-top: 150px;
-    
-}
+
 .home-upper{
     text-align: center;
+    padding-top: 150px;
 }
     
  
