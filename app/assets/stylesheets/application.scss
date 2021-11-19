@@ -3,18 +3,27 @@
 #logo-img{
     top:5px;
     left: 10px;
-    position:absolute;
-    height: 75px;
-    width: 75px;
-    
-    
-}
-.nav-links{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding-right: 50px;
-    justify-content: space-around;
+    position:fixed;
+    height: 100px;
+    width: 100px;
 }
 
+ .nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 2px;
+     justify-content: space-between;
+    padding: 0 5% 0 80%;
+}
+
+.home-upper{
+    text-align: center;
+    padding-top: 150px;
+}
     
+ 
+
+span{
+    color: white;
+}
