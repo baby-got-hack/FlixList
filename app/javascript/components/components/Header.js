@@ -23,12 +23,12 @@ class Header extends Component {
             <>
               <div className="nav-bar">
                 <Button color="primary">
-                <a href={new_user_route}>
+                  <a href={new_user_route}>
                     <span>Sign Up</span>
                   </a>
                 </Button>
                 <Button color="primary">
-                <a href={sign_in_route}>
+                  <a href={sign_in_route}>
                     <span>Login</span>
                   </a>
                 </Button>
@@ -38,7 +38,7 @@ class Header extends Component {
 
           {logged_in && (
             <Button color="primary">
-            <a href={sign_out_route}>
+              <a href={sign_out_route}>
                 <span>Log Out</span>
               </a>
             </Button>
