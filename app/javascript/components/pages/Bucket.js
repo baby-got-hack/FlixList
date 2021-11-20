@@ -5,9 +5,7 @@ import {
   Card,
   CardImg,
   CardBody,
-  CardGroup,
   CardSubtitle,
-  CardText,
   CardTitle,
   Button,
 } from "reactstrap";

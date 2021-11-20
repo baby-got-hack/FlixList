@@ -8,7 +8,7 @@ let movies = [
         movie: true,
         tv_show: false,
         seasons: 0,
-        img: "https://i.ytimg.com/vi/tiZ8u6PNTK8/maxresdefault.jpg"  
+        img: "https://i.imgur.com/SZkINrl.jpg"  
     },
     {  
         id: 2,
@@ -19,7 +19,7 @@ let movies = [
         movie: true,
         tv_show: false,
         seasons: 0,
-        img: "https://i.ytimg.com/vi/tiZ8u6PNTK8/maxresdefault.jpg"  
+        img: "https://i.imgur.com/Gemyev9.png"  
     },
     {  
         id: 3,
@@ -30,7 +30,7 @@ let movies = [
         movie: true,
         tv_show: false,
         seasons: 0,
-        img: "https://i.ytimg.com/vi/tiZ8u6PNTK8/maxresdefault.jpg"  
+        img: "https://i.imgur.com/Ry2GcrV.png"  
     },
     {  
         id: 4,
@@ -41,7 +41,7 @@ let movies = [
         movie: true,
         tv_show: false,
         seasons: 0,
-        img: "https://i.ytimg.com/vi/tiZ8u6PNTK8/maxresdefault.jpg"  
+        img: "https://i.imgur.com/0GmDvwp.png"  
     }
 ]
 export default movies
