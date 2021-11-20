@@ -1,5 +1,8 @@
 @import 'bootstrap';
-
+*{
+  
+  background-image: url("https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1489599849927-2ee91cede3ba%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM3MDg2NjMw%26ixlib%3Drb-1.2.1%26q%3D80%26w%3D1080");
+}
 #logo-img{
     top:5px;
     left: 10px;
@@ -26,4 +29,44 @@
 
 span{
     color: white;
+}
+.footer {
+  color:white;
+  padding:8px;
+ 
+  
+  
+}
+
+button{
+  width: 200px;
+  height: 100px;
+  background-color: white;
+}
+.span1{
+  background-color: white;
+  color:white;
+  font-size: 36px;
+}
+a{
+  color: red;
+}
+p{
+  position: fixed;
+  left: 200px;
+  bottom: 0;
+  width: 100%;
+  
+  color: white;
+  text-align: center;
+}
+.all{
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  color: white;
+  text-align: center;
+}
+h1{
+  color:white
 }
