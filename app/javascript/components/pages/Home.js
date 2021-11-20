@@ -14,11 +14,13 @@ class Home extends Component {
       <>
         <div className="home-upper">
           <h1>This is the home page</h1>
-          <a href={new_user_route}>Sign Up</a>
+          <button><a href={new_user_route}><span className="span1">Sign Up</span></a></button>
         </div>
         <div id="faq">
           <h1>This is the FAQ section</h1>
         </div>
+        
+        
       </>
     );
   }

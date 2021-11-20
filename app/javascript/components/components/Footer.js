@@ -4,14 +4,17 @@ import { NavLink } from "react-router-dom";
 class Footer extends Component {
   render() {
     return (
-      <footer>
-        <p>©2021 BabyGotHack</p>
-        <NavLink to="/AboutUs">About Us</NavLink>
-        <NavLink to="/#faq">FAQs</NavLink>
+      <>
+    <p>©2021 BabyGotHack</p>
+      <footer className="all">
+        
+        <NavLink to="/AboutUs"><span className="footer">About Us</span></NavLink>
+        <NavLink to="/#faq"><span className="footer">FAQs</span></NavLink>
         <a href="https://www.hollywoodreporter.com/" target="_blank">
-          Hollywood News
+          <span className="footer">Hollywood News</span>
         </a>
       </footer>
+      </>
     );
   }
 }
