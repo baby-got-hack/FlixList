@@ -4,17 +4,28 @@ import { NavLink } from "react-router-dom";
 class Footer extends Component {
   render() {
     return (
-      <>
-    <p>©2021 BabyGotHack</p>
-      <footer className="all">
-        
-        <NavLink to="/AboutUs"><span className="footer">About Us</span></NavLink>
-        <NavLink to="/#faq"><span className="footer">FAQs</span></NavLink>
-        <a href="https://www.hollywoodreporter.com/" target="_blank">
-          <span className="footer">Hollywood News</span>
+      <footer id="footer-container">
+        <a
+          href="https://github.com/baby-got-hack/FlixList"
+          target="_blank"
+          className="footer-links"
+        >
+          ©2021 BabyGotHack
+        </a>
+        <NavLink to="/AboutUs" className="footer-links">
+          About Us
+        </NavLink>
+        <NavLink to="/#faq" className="footer-links">
+          FAQs
+        </NavLink>
+        <a
+          href="https://www.hollywoodreporter.com/"
+          target="_blank"
+          className="footer-links"
+        >
+          Hollywood News
         </a>
       </footer>
-      </>
     );
   }
 }

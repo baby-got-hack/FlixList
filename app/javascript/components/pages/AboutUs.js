@@ -3,8 +3,9 @@ class AboutUs extends Component {
   render() {
     return (
       <>
-        <h1>This is the about us page</h1>
-        
+        <div className="body-container">
+          <h1>This is the about us page</h1>
+        </div>
       </>
     );
   }

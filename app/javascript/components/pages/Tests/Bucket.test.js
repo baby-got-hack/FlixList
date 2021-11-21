@@ -1,14 +1,14 @@
 import React from "react";
-import AboutUs from "./AboutUs";
+import Bucket from "../Bucket";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe("when about us renders", () => {
-  it("displays creator profile info", () => {
-    const aboutus = shallow(<AboutUs />);
-    const headerTag = aboutus.find("h1");
+describe("when bucket renders", () => {
+  it("displays bucket results", () => {
+    const bucket = shallow(<Bucket />);
+    const headerTag = bucket.find("h1");
     expect(headerTag.length).toEqual(1);
   });
 });

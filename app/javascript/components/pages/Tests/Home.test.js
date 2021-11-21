@@ -1,5 +1,5 @@
 import React from 'react'
-import Home from './Home'
+import Home from '../Home'
 import Enzyme, { shallow, } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 

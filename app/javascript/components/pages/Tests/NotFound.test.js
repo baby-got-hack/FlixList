@@ -1,5 +1,5 @@
 import React from "react";
-import NotFound from "./NotFound";
+import NotFound from "../NotFound";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 

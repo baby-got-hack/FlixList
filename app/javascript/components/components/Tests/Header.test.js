@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Header";
+import Header from "../Header";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import mockPic from "../mockFile";

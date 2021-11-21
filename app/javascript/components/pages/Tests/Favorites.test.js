@@ -1,5 +1,5 @@
 import React from "react";
-import Favorites from "./Favorites";
+import Favorites from "../Favorites";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
