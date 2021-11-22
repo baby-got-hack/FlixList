@@ -1,72 +1,106 @@
-@import 'bootstrap';
-*{
-  
-  background-image: url("https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1489599849927-2ee91cede3ba%3Fcrop%3Dentropy%26cs%3Dtinysrgb%26fit%3Dmax%26fm%3Djpg%26ixid%3DMnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM3MDg2NjMw%26ixlib%3Drb-1.2.1%26q%3D80%26w%3D1080");
-}
-#logo-img{
-    top:5px;
-    left: 10px;
-    position:fixed;
-    height: 100px;
-    width: 100px;
+@import "bootstrap";
+
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
- .nav-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin: 2px;
-     justify-content: space-between;
-    padding: 0 5% 0 80%;
+.header-container {
+  display: flex;
+  overflow: hidden;
+  background-color: black;
+  justify-content: space-between;
+  #logo-img {
+    height: 75px;
+    width: 75px;
+  }
 }
 
-.home-upper{
-    text-align: center;
-    padding-top: 150px;
-}
-    
- 
-
-span{
+.nav-bar {
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  a {
+    text-decoration: none;
     color: white;
-}
-.footer {
-  color:white;
-  padding:8px;
- 
-  
-  
+  }
+
+  .header-btn {
+    margin: 0 7px 0 7px;
+  }
 }
 
-button{
-  width: 200px;
-  height: 100px;
-  background-color: white;
+.home-upper {
+  text-align: center;
+  background-image: url("https://i.imgur.com/U2xJacL.jpg");
+  background-size: cover;
+  height: 90vh;
 }
-.span1{
-  background-color: white;
-  color:white;
+
+#home-signup-button {
+  width: 420px;
+  height: 69px;
   font-size: 36px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
-a{
-  color: red;
-}
-p{
-  position: fixed;
-  left: 200px;
-  bottom: 0;
-  width: 100%;
-  
-  color: white;
+
+#faq {
+  height: 80vh;
+  background-color: black;
   text-align: center;
 }
-.all{
-  position: fixed;
-  left: 0;
-  bottom: 10px;
-  color: white;
-  text-align: center;
+
+.body-container {
+  background-color: black;
 }
-h1{
-  color:white
+
+.bucket-body {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.bucket-card {
+  height: 575px;
+  width: 400px;
+  align-self: center;
+}
+
+#card-img {
+  height: 400px;
+}
+
+#footer-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+
+  .footer-links {
+    text-decoration: none;
+    margin: 0 30px 0 30px;
+    color: white;
+  }
+
+  .footer-links:hover {
+    color: red;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-track {
+  background-color: black;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #dc3545;
+  border-radius: 25px;
 }

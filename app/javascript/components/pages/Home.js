@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import { Button } from "reactstrap";
 
 class Home extends Component {
   render() {
@@ -14,13 +15,16 @@ class Home extends Component {
       <>
         <div className="home-upper">
           <h1>This is the home page</h1>
-          <button><a href={new_user_route}><span className="span1">Sign Up</span></a></button>
+          <br />
+          <br />
+          <br />
+          <Button color="danger" id="home-signup-button">
+            <a href={new_user_route}>Sign Up</a>
+          </Button>
         </div>
         <div id="faq">
           <h1>This is the FAQ section</h1>
         </div>
-        
-        
       </>
     );
   }

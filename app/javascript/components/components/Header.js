@@ -13,38 +13,29 @@ class Header extends Component {
       sign_out_route,
     } = this.props;
     return (
-      <header>
-        <div className="header-container">
-          <NavLink to="/">
-            <img id="logo-img" src={pic} alt="flixlist logo"></img>
-          </NavLink>
-
+      <div className="header-container">
+        <NavLink to="/">
+          <img id="logo-img" src={pic} alt="flixlist logo"></img>
+        </NavLink>
+        <div className="nav-bar">
           {!logged_in && (
             <>
-              <div className="nav-bar">
-                <Button color="primary">
-                  <a href={new_user_route}>
-                    <span>Sign Up</span>
-                  </a>
-                </Button>
-                <Button color="primary">
-                  <a href={sign_in_route}>
-                    <span>Login</span>
-                  </a>
-                </Button>
-              </div>
+              <Button color="danger" className="header-btn">
+                <a href={new_user_route}>Sign Up</a>
+              </Button>
+              <Button color="danger" className="header-btn">
+                <a href={sign_in_route}>Login</a>
+              </Button>
             </>
           )}
 
           {logged_in && (
-            <Button color="primary">
-              <a href={sign_out_route}>
-                <span>Log Out</span>
-              </a>
+            <Button color="danger" className="header-btn">
+              <a href={sign_out_route}>Log Out</a>
             </Button>
           )}
         </div>
-      </header>
+      </div>
     );
   }
 }

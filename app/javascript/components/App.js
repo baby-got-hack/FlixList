@@ -24,11 +24,11 @@ class App extends Component {
         <Router>
           <Header {...this.props} />
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/aboutus" component={AboutUs} />
-            <Route path="/favorites" component={Favorites} />
-            <Route path="/quiz" component={Quiz} />
-            <Route path="/bucket" component={Bucket} />
+            <Route exact path="/" render={() => <Home {...this.props} />} />
+            {logged_in && <Route path="/aboutus" component={AboutUs} />}
+            {logged_in && <Route path="/favorites" component={Favorites} />}
+            {logged_in && <Route path="/quiz" component={Quiz} />}
+            {logged_in && <Route path="/bucket" component={Bucket} />}
             <Route component={NotFound} />
           </Switch>
           <Footer />
