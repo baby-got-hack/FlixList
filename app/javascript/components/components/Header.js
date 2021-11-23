@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import pic from "../assets/applogo.png";
+import pic from "../assets/Logo4.png";
 import { NavLink } from "react-router-dom";
 import {
   Button,
@@ -8,7 +8,8 @@ import {
   DropdownItem,
   Dropdown,
 } from "reactstrap";
-
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Header extends Component {
   constructor(props) {
@@ -55,40 +56,28 @@ class Header extends Component {
 
           {logged_in && (
             <>
-              {/* <Button color="danger" className="header-btn">
-                <a href={sign_out_route}>Log Out</a>
-              </Button> */}
               <Dropdown
                 className="header-btn"
                 isOpen={dropdownOpen}
                 toggle={this.toggle}
               >
-                <DropdownToggle color="danger" caret>
-                  Navigate
+                <DropdownToggle color="danger">
+                <FontAwesomeIcon
+                            icon={faBars}
+                          />
                 </DropdownToggle>
                 <DropdownMenu dark container="body">
                   <DropdownItem>
-                    <Button color="danger">
-                      {" "}
-                      <NavLink to="/bucket"> Entertainment Bucket</NavLink>{" "}
-                    </Button>
+                    <NavLink to="/bucket"> Entertainment Bucket</NavLink>
                   </DropdownItem>
                   <DropdownItem>
-                    <Button color="danger">
-                      {" "}
-                      <NavLink to="/favorites">Your Favorites</NavLink>{" "}
-                    </Button>
+                    <NavLink to="/quiz"> Personality Quiz</NavLink>
                   </DropdownItem>
                   <DropdownItem>
-                    <Button color="danger">
-                      {" "}
-                      <NavLink to="/quiz"> Personality Quiz</NavLink>{" "}
-                    </Button>
+                    <NavLink to="/favorites">Your Favorites</NavLink>
                   </DropdownItem>
                   <DropdownItem>
-                    <Button color="danger">
-                      <a href={sign_out_route}>Log Out</a>
-                    </Button>
+                    <a href={sign_out_route}>Log Out</a>
                   </DropdownItem>
                 </DropdownMenu>
               </Dropdown>
