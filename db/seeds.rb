@@ -250,5 +250,5 @@ movies = [
 ]
 
 movies.each do |attribute|
-    movies.create attribute
+    Movie.create attribute
 end
