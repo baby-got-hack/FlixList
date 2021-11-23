@@ -1,9 +1,31 @@
 import React, { Component } from "react";
-import pic from "../assets/applogo.png";
+import pic from "../assets/Logo4.png";
 import { NavLink } from "react-router-dom";
-import { Button } from "reactstrap";
+import {
+  Button,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  Dropdown,
+} from "reactstrap";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      dropdownOpen: false,
+    };
+  }
+
+  toggle() {
+    this.setState((prevState) => ({
+      dropdownOpen: !prevState.dropdownOpen,
+    }));
+  }
+
   render() {
     const {
       logged_in,
@@ -12,6 +34,9 @@ class Header extends Component {
       sign_in_route,
       sign_out_route,
     } = this.props;
+
+    const { dropdownOpen } = this.state;
+
     return (
       <div className="header-container">
         <NavLink to="/">
@@ -30,9 +55,33 @@ class Header extends Component {
           )}
 
           {logged_in && (
-            <Button color="danger" className="header-btn">
-              <a href={sign_out_route}>Log Out</a>
-            </Button>
+            <>
+              <Dropdown
+                className="header-btn"
+                isOpen={dropdownOpen}
+                toggle={this.toggle}
+              >
+                <DropdownToggle color="danger">
+                <FontAwesomeIcon
+                            icon={faBars}
+                          />
+                </DropdownToggle>
+                <DropdownMenu dark container="body">
+                  <DropdownItem>
+                    <NavLink to="/bucket"> Entertainment Bucket</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink to="/quiz"> Personality Quiz</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink to="/favorites">Your Favorites</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <a href={sign_out_route}>Log Out</a>
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
+            </>
           )}
         </div>
       </div>
