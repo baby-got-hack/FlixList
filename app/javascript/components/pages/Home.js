@@ -24,7 +24,9 @@ class Home extends Component {
         </div>
         <div id="faq">
           <h1>This is the FAQ section</h1>
+         
         </div>
+        
       </>
     );
   }
