@@ -31,10 +31,10 @@ class AboutUs extends Component {
                         </div>
                     </div>
                     <div className="about-us-person">
-                        <img src={Sahtra} alt="Sahtra Chawwh" width="220" height="320"/>
+                        <img src={Sahtra} alt="Sahtra Green || Chawwh" width="220" height="320"/>
                         <div>
-                            <h3>Chauncy Sapien</h3>
-                            <h3>Sahtra</h3>
+                            <h3>Sahtra || Chawwh</h3>
+                            <h3>Tech Lead</h3>
                             <div className="about-us-person-info">
                                 <p>Developer 3 Story</p>
                             </div>
