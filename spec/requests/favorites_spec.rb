@@ -8,6 +8,8 @@ RSpec.describe "Favorites", type: :request do
       user_id: user_id,
       movie_id: movie_id
     }}
+    let(:json){ JSON.parse(response.body)}
+
     before do
       post '/favorites', params: params 
     end
@@ -33,6 +35,7 @@ RSpec.describe "Favorites", type: :request do
       it 'has movie id' do
         favorite = Favorite.all.first
         expect(favorite.movie_id).to eq drama_one.id 
+        expect(json[movie_id]).to eq drama_one.id
       end
     end
   end
