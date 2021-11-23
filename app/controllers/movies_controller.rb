@@ -1,8 +1,8 @@
 class MoviesController < ApplicationController
 
     def index
-         movie = Movie.all
-         render json: movie
+         movies = Movie.where(genre: params[:genre]).order(:title)
+         render json: movies
     end
 
 end
