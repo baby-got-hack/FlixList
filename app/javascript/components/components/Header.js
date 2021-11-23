@@ -3,18 +3,12 @@ import pic from "../assets/applogo.png";
 import { NavLink } from "react-router-dom";
 import {
   Button,
-  Navbar,
-  NavbarBrand,
-  Collapse,
-  NavbarToggler,
-  Nav,
-  NavItem,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  UncontrolledDropdown,
   Dropdown,
 } from "reactstrap";
+
 
 class Header extends Component {
   constructor(props) {
@@ -61,18 +55,43 @@ class Header extends Component {
 
           {logged_in && (
             <>
-              <Button color="danger" className="header-btn">
+              {/* <Button color="danger" className="header-btn">
                 <a href={sign_out_route}>Log Out</a>
-              </Button>
-                <Dropdown className="header-btn" isOpen={dropdownOpen} toggle={this.toggle}>
-                  <DropdownToggle color="danger" caret>Navigate</DropdownToggle>
-                  <DropdownMenu  dark container="body">
-                  <DropdownItem><Button color="danger"> <NavLink to="/bucket"> Entertainment Bucket</NavLink> </Button></DropdownItem>
-                   <DropdownItem><Button color="danger"> <NavLink to="/favorites">Your Favorites</NavLink> </Button></DropdownItem>
-                   <DropdownItem><Button color="danger"> <NavLink to="/quiz"> Personality Quiz</NavLink> </Button></DropdownItem>
-                   <DropdownItem><Button color="danger"><a href={sign_out_route}>Log Out</a></Button></DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
+              </Button> */}
+              <Dropdown
+                className="header-btn"
+                isOpen={dropdownOpen}
+                toggle={this.toggle}
+              >
+                <DropdownToggle color="danger" caret>
+                  Navigate
+                </DropdownToggle>
+                <DropdownMenu dark container="body">
+                  <DropdownItem>
+                    <Button color="danger">
+                      {" "}
+                      <NavLink to="/bucket"> Entertainment Bucket</NavLink>{" "}
+                    </Button>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Button color="danger">
+                      {" "}
+                      <NavLink to="/favorites">Your Favorites</NavLink>{" "}
+                    </Button>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Button color="danger">
+                      {" "}
+                      <NavLink to="/quiz"> Personality Quiz</NavLink>{" "}
+                    </Button>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Button color="danger">
+                      <a href={sign_out_route}>Log Out</a>
+                    </Button>
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
             </>
           )}
         </div>
