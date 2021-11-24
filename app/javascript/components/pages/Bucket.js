@@ -36,9 +36,8 @@ class Bucket extends Component {
               this.state.movies.map((movie) => {
                 return (
                   <>
-                    <CardGroup>
+                    <CardGroup  key={movie.id}>
                       <Card
-                        key={movie.id}
                         color="dark"
                         inverse
                         className="bucket-card"
