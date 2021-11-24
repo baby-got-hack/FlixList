@@ -1,59 +1,112 @@
-import React, { Component } from 'react';
-import Philip from '../assets/Philip.jpg'
-import Lillian from '../assets/Lillian.jpg'
-import Sahtra from '../assets/Sahtra.jpg'
-import Elias from '../assets/Elias.jpg'
+import React, { Component } from "react";
+import Philip from "../assets/Philip.jpg";
+import Lillian3 from "../assets/Lillian3.png";
+import Sahtra from "../assets/Sahtra.jpg";
+import Elias4 from "../assets/Elias4.png";
+import LinkedIn from "../assets/icons8-linkedin-2-48.png";
+import {
+  Card,
+  CardGroup,
+  CardImg,
+  CardBody,
+  CardSubtitle,
+  CardTitle,
+  Button,
+  CardText,
+} from "reactstrap";
 
 class AboutUs extends Component {
-    render() {
-        return (
-            <div>
-                <h3 className="about-us-header">About us</h3>
-                <div className="about-us-container">
-                    <div className="about-us-person">
-                        <img src={Philip} alt="Philip Disidoro" width="220" height="320"/>
-                        <div>
-                            <h3>Philip Disidoro</h3>
-                            <h3>Product Manager</h3>
-                            <div className="about-us-person-info">
-                                <p>Developer 1 Story</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="about-us-person">
-                        <img src={Lillian} alt="Lillian" width="220" height="320"/>
-                        <div>
-                            <h3>Lillian</h3>
-                            <h3>Project Manager</h3>
-                            <div className="about-us-person-info">
-                                <p>Developer 2 Story</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="about-us-person">
-                        <img src={Sahtra} alt="Sahtra Green || Chawwh" width="220" height="320"/>
-                        <div>
-                            <h3>Sahtra || Chawwh</h3>
-                            <h3>Tech Lead</h3>
-                            <div className="about-us-person-info">
-                                <p>Developer 3 Story</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="about-us-person">
-                        <img src={Elias} alt="Elias" width="220" height="320"/>
-                        <div>
-                            <h3>Elias Tsegay</h3>
-                            <h3>Design Lead</h3>
-                            <div className="about-us-person-info">
-                                <p>Developer 4 Story</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <>
+        <div className="body-container">
+          <div className="aboutus-upper">
+            <h1>Meet the FlixList Creators!</h1>
+            <div className="aboutus-body"></div>
+          </div>
+          <>
+            <CardGroup>
+              <Card color="dark" className="aboutus-card">
+                <CardImg alt="Card image cap" src={Philip} top width="25%" />
+                <CardBody>
+                  <CardTitle tag="h5">PHILIP DISIDORO</CardTitle>
+                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                    Product Manager
+                  </CardSubtitle>
+                  <CardText>
+                    <br />
+                    "There are 360 degrees, so why only stick to one? Zaha
+                    Hadid"
+                    <br />
+                    ~Zaha Hadid
+                  </CardText>
+                  <a href="https://www.linkedin.com/in/pdisidoro/">
+                    <img src={LinkedIn} className="linkedin-btn" />
+                  </a>
+                </CardBody>
+              </Card>
+              <Card color="dark" className="aboutus-card">
+                <CardImg alt="Card image cap" src={Lillian3} top width="25%" />
+                <CardBody>
+                  <CardTitle tag="h5">LILLIAN McGILLIVRAY</CardTitle>
+                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                    Project Manager
+                  </CardSubtitle>
+                  <CardText>
+                    <br />
+                    "If you think it's expensive to hire a professional to do
+                    the job, just wait until you hire an amateur"
+                    <br />
+                    ~83oranges
+                  </CardText>
+                  <a href="https://www.linkedin.com/in/lillian-mcgillivray-8118315/">
+                    <img src={LinkedIn} className="linkedin-btn" />
+                  </a>
+                </CardBody>
+              </Card>
+              <Card color="dark" className="aboutus-card">
+                <CardImg alt="Card image cap" src={Sahtra} top width="25%" />
+                <CardBody>
+                  <CardTitle tag="h5">SAHTRA 'CHAWWH'</CardTitle>
+                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                    Tech Lead
+                  </CardSubtitle>
+                  <CardText>
+                    <br />
+                    "Life is a tornado and I'm the cow spinning around for
+                    cinematic effect"
+                    <br />
+                    ~@69possums420
+                  </CardText>
+                  <a href="https://www.linkedin.com/in/Chawwh/">
+                    <img src={LinkedIn} className="linkedin-btn" />
+                  </a>
+                </CardBody>
+              </Card>
+              <Card color="dark" className="aboutus-card">
+                <CardImg alt="Card image cap" src={Elias4} top width="25%" />
+                <CardBody>
+                  <CardTitle tag="h5">ELIAS TSEGAY</CardTitle>
+                  <CardSubtitle className="mb-2 text-muted" tag="h6">
+                    Design Lead
+                  </CardSubtitle>
+                  <CardText>
+                    <br />
+                    "One man’s crappy software is another man’s full time job"
+                    <br />
+                    ~Jessica Gaston
+                  </CardText>
+                  <a href="https://www.linkedin.com/in/elias-zerai-b1693a134//Elias">
+                    <img src={LinkedIn} className="linkedin-btn" />
+                  </a>
+                </CardBody>
+              </Card>
+            </CardGroup>
+          </>
+        </div>
+      </>
+    );
+  }
 }
 
 export default AboutUs;
