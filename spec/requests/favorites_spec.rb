@@ -30,13 +30,13 @@ RSpec.describe "Favorites", type: :request do
       it 'has a user id' do
         favorite = Favorite.all.first
         expect(favorite.user_id).to eq user_one.id 
-        expect(json[user_id]).to eq user_one.id
+        expect(json['user_id']).to eq user_one.id
       end
 
       it 'has movie id' do
         favorite = Favorite.all.first
         expect(favorite.movie_id).to eq drama_one.id 
-        expect(json[movie_id]).to eq drama_one.id
+        expect(json['movie_id']).to eq drama_one.id
       end
     end
 end
