@@ -36,9 +36,9 @@ class App extends Component {
       .catch((errors) => console.log("favorites index errors:", errors));
   };
 
-  createFavorite = (newFavorite) => {
+  createFavorite = (movie_id, user_id) => {
     fetch("/favorites", {
-      body: JSON.stringify(newFavorite),
+      body: JSON.stringify({movie_id, user_id}),
       headers: {
         "Content-Type": "application/json",
       },
