@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import movies from "../mockMovies";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   Card,
@@ -16,17 +15,27 @@ class Bucket extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      movies: movies,
+      form: {
+        movie_id: this.props.movies.id,
+        user_id: this.props.current_user.id,
+      },
+      submitted: false,
     };
   }
+
+  handleSubmit = () => {
+    this.props.createFavorite(this.state.form);
+    this.setState({ submitted: true });
+  };
+
   render() {
     return (
       <>
         <div className="body-container">
           <h1>Your Personalized Entertainment Bucket</h1>
           <div className="bucket-body">
-            {this.state.movies &&
-              this.state.movies.map((movie) => {
+            {this.props.movies &&
+              this.props.movies.map((movie) => {
                 return (
                   <>
                     <CardGroup>
@@ -45,17 +54,19 @@ class Bucket extends Component {
                         />
                         <CardBody>
                           <CardTitle tag="h5">{movie.title}</CardTitle>
-                          <FontAwesomeIcon
-                            icon={faStar}
-                            style={{ color: "#FFE401" }}
-                          />
 
                           <CardSubtitle className="mb-2 text-muted" tag="h6">
                             Genre: {movie.genre}
                             <br />
                             Runtime: {movie.runtime}
                           </CardSubtitle>
-                          <Button>Add to Favorites</Button>
+                          <Button color="warning" onClick={this.handleSubmit}>
+                            <FontAwesomeIcon
+                              icon={faStar}
+                              style={{ color: "#FFE401" }}
+                            />{" "}
+                            Add to Favorites
+                          </Button>
                         </CardBody>
                       </Card>
                     </CardGroup>
