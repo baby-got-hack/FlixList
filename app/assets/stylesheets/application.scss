@@ -6,6 +6,8 @@
   padding: 0;
 }
 
+// -------HEADER--------------------------
+
 .header-container {
   display: flex;
   overflow: hidden;
@@ -32,6 +34,8 @@
   }
 }
 
+// --------HAMBURGER TOGGLE----------------------
+
 .dropdown-menu.dropdown-menu-dark.show{
   text-align: center;
   a {
@@ -43,11 +47,17 @@
   }
 }
 
+// -----------HOME PAGE--------------------------
 .home-upper {
   text-align: center;
   background-image: url("https://i.imgur.com/U2xJacL.jpg");
   background-size: cover;
   height: 90vh;
+}
+
+.body-container {
+  background-color: black;
+  height: 80vh;
 }
 
 #home-signup-button {
@@ -66,9 +76,34 @@
   text-align: center;
 }
 
-.body-container {
-  background-color: black;
+// -----ABOUT US---------------------------
+
+.linkedin-btn {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #dc3545;
 }
+
+.aboutus-upper {
+  padding-top: 40px;
+  text-align: center;
+  background-color: black;
+  background-size: cover;
+}
+
+.aboutus-body {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+.aboutus-card {
+  padding: 0 10px 0 10px;
+}
+}
+
+// -------ENTERTAINMENT BUCKET-------------------
 
 .bucket-body {
   display: grid;
@@ -88,6 +123,8 @@
   height: 400px;
 }
 
+// ------FOOTER---------------------------------
+
 #footer-container {
   display: flex;
   justify-content: center;
@@ -104,6 +141,8 @@
     color: red;
   }
 }
+
+// ------SCROLL BAR RIGHT SIDE-----------------
 
 body::-webkit-scrollbar {
   width: 0.5em;
