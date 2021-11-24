@@ -36,14 +36,14 @@
 
 // --------HAMBURGER TOGGLE----------------------
 
-.dropdown-menu.dropdown-menu-dark.show{
+.dropdown-menu.dropdown-menu-dark.show {
   text-align: center;
   a {
     text-decoration: none;
     color: white;
   }
-  a:hover{
-    color:rgb(249, 60, 60);
+  a:hover {
+    color: rgb(249, 60, 60);
   }
 }
 
@@ -98,9 +98,9 @@
   align-items: center;
   column-gap: 20px;
   row-gap: 20px;
-.aboutus-card {
-  padding: 0 10px 0 10px;
-}
+  .aboutus-card {
+    padding: 0 10px 0 10px;
+  }
 }
 
 // -------ENTERTAINMENT BUCKET-------------------
