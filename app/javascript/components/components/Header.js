@@ -14,8 +14,8 @@ class Header extends Component {
     } = this.props;
     return (
       <div className="header-container">
-        <NavLink to="/">
           <img id="logo-img" src={pic} alt="flixlist logo"></img>
+        <NavLink to="/">
         </NavLink>
         <div className="nav-bar">
           {!logged_in && (
