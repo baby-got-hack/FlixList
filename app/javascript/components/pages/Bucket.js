@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import movies from "../mockMovies";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import movies from "../mockMovies"
 import {
   Card,
   CardGroup,
@@ -17,8 +17,15 @@ class Bucket extends Component {
     super(props);
     this.state = {
       movies: movies,
+      submitted: false,
     };
   }
+
+  handleSubmit = (movie_id) => {
+    this.props.createFavorite(movie_id, this.props.current_user.id)
+    this.setState({ submitted: true });
+  };
+
   render() {
     return (
       <>
@@ -29,9 +36,8 @@ class Bucket extends Component {
               this.state.movies.map((movie) => {
                 return (
                   <>
-                    <CardGroup>
+                    <CardGroup  key={movie.id}>
                       <Card
-                        key={movie.id}
                         color="dark"
                         inverse
                         className="bucket-card"
@@ -45,17 +51,19 @@ class Bucket extends Component {
                         />
                         <CardBody>
                           <CardTitle tag="h5">{movie.title}</CardTitle>
-                          <FontAwesomeIcon
-                            icon={faStar}
-                            style={{ color: "#FFE401" }}
-                          />
 
                           <CardSubtitle className="mb-2 text-muted" tag="h6">
                             Genre: {movie.genre}
                             <br />
                             Runtime: {movie.runtime}
                           </CardSubtitle>
-                          <Button>Add to Favorites</Button>
+                          <Button color="warning" onClick={() => this.handleSubmit(movie.id)}>
+                            <FontAwesomeIcon
+                              icon={faStar}
+                              style={{ color: "#FFE401" }}
+                            />{" "}
+                            Add to Favorites
+                          </Button>
                         </CardBody>
                       </Card>
                     </CardGroup>
