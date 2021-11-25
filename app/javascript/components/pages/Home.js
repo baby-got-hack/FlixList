@@ -51,26 +51,26 @@ class Home extends Component {
         </div>
         <div id="faq">
           <h1>Frequently asked questions</h1>
-          <UncontrolledAccordion defaultOpen={["1", "2", "3", "4"]} stayOpen>
-            <AccordionItem>
+          <UncontrolledAccordion defaultOpen={["1", "2", "3", "4"]} stayOpen id="faq-content">
+            <AccordionItem className="faq-q-tab">
               <AccordionHeader targetId="1">How much does FlixList cost</AccordionHeader>
               <AccordionItem accordionid="1">
               FlixList is a free service! Just hit the Sign Up button and create your account. It's that simple!
               </AccordionItem>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem className="faq-q-tab">
               <AccordionHeader targetId="2">How is FlixList different from just searching directly in streaming services like Newflix or Amazon Prime?</AccordionHeader>
               <AccordionItem accordionid="2">
               FlixList is a one-stop shop! We can search for entertainment you never even considered based on your Entertainment 'personality'. We scour all the top streaming services including HBO Max, Hulu, AppleTV+, Disney+, Amazon Prime, Amazon Video, Netflix, iTunes, Showtime Anytime, CSB All Access, Peacock, Content.
               </AccordionItem>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem className="faq-q-tab">
               <AccordionHeader targetId="3">How often should I take the Entertainment Personality Quiz?</AccordionHeader>
               <AccordionItem accordionid="3">
               Anytime you want to refresh your Entertainment Viewing Bucket! Your binge watching mood will never be the same, so why should your movie and TV options? Answer a few simple questions in your quiz and let FlixList do the rest! Your Bucket will fill up with viewing options so you can get your flix binge on!
               </AccordionItem>
             </AccordionItem>
-            <AccordionItem>
+            <AccordionItem className="faq-q-tab">
               <AccordionHeader targetId="4">How do I add movies and TV shows to my favorites page?</AccordionHeader>
               <AccordionItem accordionid="4">
               Once you have completed your Entertainment Personality Quiz, your Entertainment Bucket page will fill up with recommended movies and TV shows. Click the star button to add your top picks to Your Favorites page!

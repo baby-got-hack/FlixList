@@ -39,8 +39,8 @@ class Header extends Component {
 
     return (
       <div className="header-container">
-          <img id="logo-img" src={pic} alt="flixlist logo"></img>
         <NavLink to="/">
+          <img id="logo-img" src={pic} alt="flixlist logo"></img>
         </NavLink>
         <div className="nav-bar">
           {!logged_in && (
@@ -63,7 +63,7 @@ class Header extends Component {
               >
                 <DropdownToggle color="danger">
                 <FontAwesomeIcon
-                            icon={faBars}
+                            icon={faBars} size="3x"
                           />
                 </DropdownToggle>
                 <DropdownMenu dark container="body">
