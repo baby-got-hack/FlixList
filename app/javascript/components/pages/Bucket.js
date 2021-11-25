@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import movies from "../mockMovies"
+
 import {
   Card,
   CardGroup,
@@ -16,7 +16,7 @@ class Bucket extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      movies: movies,
+      // movies: movies,
       submitted: false,
     };
   }
@@ -24,6 +24,7 @@ class Bucket extends Component {
   handleSubmit = (movie_id) => {
     this.props.createFavorite(movie_id, this.props.current_user.id)
     this.setState({ submitted: true });
+    console.log("Saved to favorites!");
   };
 
   render() {
@@ -32,8 +33,8 @@ class Bucket extends Component {
         <div className="body-container">
           <h1>Your Personalized Entertainment Bucket</h1>
           <div className="bucket-body">
-            {this.state.movies &&
-              this.state.movies.map((movie) => {
+            {this.props.movies &&
+              this.props.movies.map((movie) => {
                 return (
                   <>
                     <CardGroup  key={movie.id}>

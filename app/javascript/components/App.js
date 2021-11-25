@@ -18,12 +18,13 @@ class App extends Component {
       favorites: [],
     };
   }
-  componentDidMount(){
-    this.readMovies()
+  componentDidMount() {
+    this.readMovies(),
+    this.readFavorites();
   }
 
-  readMovies = () => {
-    fetch("/movies")
+  readMovies = (genre) => {
+    fetch(`/movies?genre=${genre}`)
       .then((response) => response.json())
       .then((payload) => this.setState({ movies: payload }))
       .catch((errors) => console.log("movie index errors:", errors));
@@ -38,7 +39,7 @@ class App extends Component {
 
   createFavorite = (movie_id, user_id) => {
     fetch("/favorites", {
-      body: JSON.stringify({movie_id, user_id}),
+      body: JSON.stringify({ movie_id, user_id }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -71,14 +72,20 @@ class App extends Component {
             <Route path="/aboutus" component={AboutUs} />
             {logged_in && (
               <Route
-                path="/favorites"
+                path="/yourfavorites"
                 render={(props) => {
-                  let favorites = this.state.favorites.filter(
-                    (f) => f.user_id === current_user.id
-                  );
-                  return <Favorites favorites={favorites} />;
-                }}/>)}
-            {logged_in && <Route path="/quiz" component={Quiz} />}
+                  return <Favorites favorites={this.state.favorites} current_user={current_user} />;
+                }}
+              />
+            )}
+            {logged_in && (
+              <Route
+                path="/quiz"
+                render={() => {
+                  return <Quiz populateBucket={this.readMovies} />;
+                }}
+              />
+            )}
             {logged_in && (
               <Route
                 path="/bucket"
@@ -90,7 +97,9 @@ class App extends Component {
                       current_user={current_user}
                     />
                   );
-                }}/> )}
+                }}
+              />
+            )}
             <Route component={NotFound} />
           </Switch>
           <Footer />
