@@ -3,9 +3,8 @@ import { NavLink } from "react-router-dom";
 import { Button } from "reactstrap";
 import Compiled from "./Compiled";
 
-
 class Home extends Component {
-  render(){
+  render() {
     const {
       logged_in,
       current_user,
@@ -17,14 +16,37 @@ class Home extends Component {
     return (
       <>
         <div className="home-upper">
-          <h1>That feeling when you’re sure you’ve watched every movie or tv series on the world wide web.
-             But there is no way Hollywood would leave you stranded like that! Let FlixList scour all your 
-             favorite streaming services, and then some, based on YOUR entertainment personality. 
-             We will guide you towards the entertainment selections that you’ve been missing out on. 
-            FlixList will take into account your entertainment viewing ‘personality’ and tailor your 
-            viewing bucket so that it’s never empty. How will we do this? Members will fill out an 
-            entertainment ‘personality’ questionnaire that includes genres you vibe with, release  
-       </h1>
+          <h1>Welcome to FlixList!</h1>
+          <br />
+          <h3>
+            Ugh! That feeling when you’re sure you’ve watched every movie or TV
+            series on the world wide web...
+          </h3>
+          <br />
+          <h3>
+            But there is no way Hollywood would leave you stranded like that!
+          </h3>
+          <br />
+          <br />
+          <h4>
+            Entertainment Personality Quiz: Let FlixList scour all the top
+            streaming services based on YOUR entertainment personality.
+          </h4>
+          <br />
+          <h4>
+            {" "}
+            Your Viewing Bucket: FlixList will make sure your Entertainment
+            bucket is never empty.
+          </h4>
+          <br />
+          <br />
+          <br />
+          <h4>It’s that easy! So stop the endless surfing...</h4>
+          <br />
+          <h4>
+            Flixlist makes it so you don’t have to waste time, while wasting
+            time.
+          </h4>
           <br />
           <br />
           <br />
@@ -32,7 +54,7 @@ class Home extends Component {
             <a href={new_user_route}>Sign Up</a>
           </Button>
         </div>
-       <Compiled/>
+        <Compiled />
       </>
     );
   }
