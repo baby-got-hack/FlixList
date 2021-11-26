@@ -1,7 +1,19 @@
 class FavoritesController < ApplicationController
+    before_action :authenticate_user!
+
     def index
-        favorites = Favorite.all, Movie.all
+      favorites = Favorite.where(user_id: current_user)
+      render json: favorites
+    end
+
+    def movie_data
+        favorites = Movie.joins(:favorites).where(favorites: {user_id: current_user}).uniq
         render json: favorites
+    end
+
+    def show
+        favorite = Favorite.find(params[:id])
+        render json: favorite
     end
 
     def create

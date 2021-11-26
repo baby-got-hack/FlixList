@@ -22,7 +22,7 @@ class Bucket extends Component {
   }
 
   handleSubmit = (movie_id) => {
-    this.props.createFavorite(movie_id, this.props.current_user.id)
+    this.props.createFavorite(movie_id, this.props.current_user.id);
     this.setState({ submitted: true });
     console.log("Saved to favorites!");
   };
@@ -36,39 +36,36 @@ class Bucket extends Component {
             {this.props.movies &&
               this.props.movies.map((movie) => {
                 return (
-                  <>
-                    <CardGroup  key={movie.id}>
-                      <Card
-                        color="dark"
-                        inverse
-                        className="bucket-card"
-                      >
-                        <CardImg
-                          alt="Card image cap"
-                          src={movie.img}
-                          top
-                          width="100%"
-                          id="card-img"
-                        />
-                        <CardBody>
-                          <CardTitle tag="h5">{movie.title}</CardTitle>
+                  <CardGroup key={movie.id}>
+                    <Card color="dark" inverse className="bucket-card">
+                      <CardImg
+                        alt="Card image cap"
+                        src={movie.img}
+                        top
+                        width="100%"
+                        id="card-img"
+                      />
+                      <CardBody>
+                        <CardTitle tag="h5">{movie.title}</CardTitle>
 
-                          <CardSubtitle className="mb-2 text-muted" tag="h6">
-                            Genre: {movie.genre}
-                            <br />
-                            Runtime: {movie.runtime}
-                          </CardSubtitle>
-                          <Button color="warning" onClick={() => this.handleSubmit(movie.id)}>
-                            <FontAwesomeIcon
-                              icon={faStar}
-                              style={{ color: "#FFE401" }}
-                            />{" "}
-                            Add to Favorites
-                          </Button>
-                        </CardBody>
-                      </Card>
-                    </CardGroup>
-                  </>
+                        <CardSubtitle className="mb-2 text-muted" tag="h6">
+                          Genre: {movie.genre}
+                          <br />
+                          Runtime: {movie.runtime}
+                        </CardSubtitle>
+                        <Button
+                          color="warning"
+                          onClick={() => this.handleSubmit(movie.id)}
+                        >
+                          <FontAwesomeIcon
+                            icon={faStar}
+                            style={{ color: "#FFE401" }}
+                          />{" "}
+                          Add to Favorites
+                        </Button>
+                      </CardBody>
+                    </Card>
+                  </CardGroup>
                 );
               })}
           </div>
