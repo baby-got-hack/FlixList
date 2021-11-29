@@ -118,6 +118,137 @@ movies = [
     },
 
     {
+        title: 'The Hangover Part II',
+        genre: 'comedy',
+        release_date: '2011',
+        runtime: '102 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/9f8i83k.png'
+    },
+
+    {
+        title: 'Ted',
+        genre: 'comedy',
+        release_date: '2012',
+        runtime: '106 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/lHsPozP.png'
+    },
+
+    {
+        title: 'Meet the Fockers',
+        genre: 'comedy',
+        release_date: '2004',
+        runtime: '114 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/Mi8Go0f.png'
+    },
+
+    {
+        title: 'Mad Max: Fury Road',
+        genre: 'action',
+        release_date: '2015',
+        runtime: '120 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/H5a6O2k.png'
+    },
+
+    {
+        title: 'John Wick',
+        genre: 'action',
+        release_date: '2014',
+        runtime: '101 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/0gauow7.png'
+    },
+
+    {
+        title: 'Sicario',
+        genre: 'action',
+        release_date: '2015',
+        runtime: '121 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/CHE0BVS.png'
+    },
+
+    {
+        title: 'The Conjuring',
+        genre: 'horror',
+        release_date: '2013',
+        runtime: '112 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/lmO47dZ.png'
+    },
+
+    {
+        title: 'The Exorcist',
+        genre: 'horror',
+        release_date: '1973',
+        runtime: '121 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/C7yvJnI.png'
+    },
+
+    {
+        title: 'The Shining',
+        genre: 'horror',
+        release_date: '1980',
+        runtime: '146 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/vgoLrOG.png'
+    },
+
+    {
+        title: 'Good Will Hunting',
+        genre: 'drama',
+        release_date: '1997',
+        runtime: '126 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/iThkme5.png'
+    },
+
+    {
+        title: 'Parasite',
+        genre: 'drama',
+        release_date: '2019',
+        runtime: '132 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/k8qXhb6.png'
+    },
+
+    {
+        title: 'The Shawshank Redemption',
+        genre: 'drama',
+        release_date: '1994',
+        runtime: '142 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/7tPMgin.png'
+    },
+
+    {
+        title: 'A Beautiful Mind',
+        genre: 'drama',
+        release_date: '2001',
+        runtime: '135 min',
+        tv_show: false,
+        seasons: 0,
+        img: 'https://i.imgur.com/oz9DLkX.png'
+    },
+
+
+    {
     title: 'Misery',
     genre: 'horror',
     release_date: '1990',
@@ -245,7 +376,130 @@ movies = [
     tv_show: true,
     seasons: 1,
     img: 'https://i.imgur.com/YVPWci8.png'
+    },
+
+    {
+        title: 'Peaky Blinders',
+        genre: 'Drama',
+        release_date: '2013',
+        runtime: '60 min',
+        tv_show: true,
+        seasons: 5,
+        img: 'https://i.imgur.com/2CJOHtv.png'
+    },
+
+    {
+        title: 'Yellowstone',
+        genre: 'Drama',
+        release_date: '2018',
+        runtime: '60 min',
+        tv_show: true,
+        seasons: 4,
+        img: 'https://i.imgur.com/LE1Ufca.png'
+    },
+
+    {
+        title: 'Suits',
+        genre: 'Drama',
+        release_date: '2011',
+        runtime: '42 min',
+        tv_show: true,
+        seasons: 9,
+        img: 'https://i.imgur.com/SHLFm6j.png'
+    },
+
+    {
+        title: 'Vikings',
+        genre: 'Action',
+        release_date: '2013',
+        runtime: '44 min',
+        tv_show: true,
+        seasons: 5,
+        img: 'https://i.imgur.com/h03Alqv.png'
+    },
+
+    {
+        title: 'The Boys',
+        genre: 'Action',
+        release_date: '2019',
+        runtime: '51 min',
+        tv_show: true,
+        seasons: 2,
+        img: 'https://i.imgur.com/CrxmBun.png'
+    },
+
+    {
+        title: 'Watchmen',
+        genre: 'Action',
+        release_date: '2019',
+        runtime: '58 min',
+        tv_show: true,
+        seasons: 1,
+        img: 'https://i.imgur.com/swxl2YG.png'
+    },
+
+    {
+        title: 'American Horror Story',
+        genre: 'Horror',
+        release_date: '2011',
+        runtime: '54 min',
+        tv_show: true,
+        seasons: 10,
+        img: 'https://i.imgur.com/RhNExee.png'
+    },
+
+    {
+        title: 'Stranger Things',
+        genre: 'Horror',
+        release_date: '2016',
+        runtime: '59 min',
+        tv_show: true,
+        seasons: 3,
+        img: 'https://i.imgur.com/sENaOpW.png'
+    },
+
+    {
+        title: 'The Outsider',
+        genre: 'Horror',
+        release_date: '2020',
+        runtime: '53 min',
+        tv_show: true,
+        seasons: 1,
+        img: 'https://i.imgur.com/Qn8sodN.png'
+    },
+
+    {
+        title: 'Ted Lasso',
+        genre: 'Comedy',
+        release_date: '2020',
+        runtime: '30 min',
+        tv_show: true,
+        seasons: 2,
+        img: 'https://i.imgur.com/kpB0q2L.png'
+    },
+
+    {
+        title: 'Brooklyn nine-nine',
+        genre: 'Comedy',
+        release_date: '2013',
+        runtime: '22 min',
+        tv_show: true,
+        seasons: 8,
+        img: 'https://i.imgur.com/dfOs5hs.png'
+    },
+
+    {
+        title: 'its Always Sunny in Philadelphia',
+        genre: 'Comedy',
+        release_date: '2005',
+        runtime: '21 min',
+        tv_show: true,
+        seasons: 15,
+        img: 'https://i.imgur.com/yiHnzba.png'
     }
+
+    
+
 
 ]
 
