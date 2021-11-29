@@ -63,9 +63,7 @@ class Header extends Component {
                 toggle={this.toggle}
               >
                 <DropdownToggle color="danger">
-                <FontAwesomeIcon
-                            icon={faBars} size="3x"
-                          />
+                  <FontAwesomeIcon icon={faBars} size="2x" />
                 </DropdownToggle>
                 <DropdownMenu dark container="body">
                   <DropdownItem>

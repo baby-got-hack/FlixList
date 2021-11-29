@@ -1,7 +1,7 @@
 @import "bootstrap";
 
 * {
-  color:white;
+  color: white;
   margin: 0;
   padding: 0;
 }
@@ -37,8 +37,8 @@
     width: 100px;
     font-size: 1.2rem;
   }
-  #hamburger-icon{
-    height: 58px;
+  #hamburger-icon {
+    height: 48px;
     width: 50px;
   }
 }
@@ -46,7 +46,23 @@
 // --------HAMBURGER TOGGLE----------------------
 
 .dropdown-menu.dropdown-menu-dark.show {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  width: 400px;
   text-align: center;
+  .dropdown-item {
+    height: 64px;
+    font-size: 20px;
+  }
+  .dropdown-item:focus {
+    color: rgb(249, 60, 60);
+  }
+  .dropdown-item:active {
+    color: #3f444a;
+  }
   a {
     text-decoration: none;
     color: white;
@@ -87,43 +103,48 @@
   text-align: center;
 }
 
-#faq-content{
-margin: 50px 20% 0 20%;
+#faq-content {
+  margin: 50px 20% 0 20%;
 }
 
-.accordion-button.collapsed::after, .accordion-button:not(.collapsed)::after{
-  fill:#dc3545;
-  background-image: none;
+.accordion-button.collapsed::after {
+  background-image: image-url("plus-solid.svg");
 }
 
-.accordion-button.collapsed::after{
+.accordion-button:not(.collapsed)::after {
   background-image: image-url("minus-solid.svg");
 }
 
-.accordion-button:not(.collapsed)::after{
-  background-image: image-url("plus-solid.svg");
-  color:#dc3545;
+.accordion-item {
+  background-color: #1e1e1e;
 }
 
-.accordion-item{
-  background-color: #1e1e1e ;
+.faq-ans {
+  display: none;
 }
-.accordion-button{
-  background-color: rgb(26, 26, 26) ;
+
+.display-content {
+  text-align: center;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+}
+
+.accordion-button {
+  background-color: rgb(18, 18, 18);
   color: white;
   font-size: 20px;
 }
 
-.accordion-button:not(.collapsed){
-  background-color: rgb(18, 18, 18) ;
+.accordion-button:not(.collapsed) {
+  background-color: rgb(18, 18, 18);
   color: rgb(195, 195, 195);
   font-size: 20px;
 }
 
-.accordion-button:focus{
-box-shadow: none;
+.accordion-button:focus {
+  box-shadow: none;
 }
-
 
 // -----ABOUT US---------------------------
 
@@ -194,7 +215,7 @@ box-shadow: none;
 // ------SCROLL BAR RIGHT SIDE-----------------
 
 body::-webkit-scrollbar {
-  width: 0.5em;
+  width: 0.8em;
 }
 body::-webkit-scrollbar-track {
   background-color: black;
@@ -204,19 +225,19 @@ body::-webkit-scrollbar-thumb {
   border-radius: 25px;
 }
 
-.devise-element{
+.devise-element {
   display: center;
   justify-content: center;
   text-align: center;
   background-color: rgb(31, 76, 123);
 }
 
-.devise-container{
+.devise-container {
   height: 90vh;
   text-align: center;
   background-color: black;
 }
 
-.devise-box{
+.devise-box {
   background-color: rgb(31, 76, 123);
 }
