@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 class Footer extends Component {
   render() {
     return (
+      <div className="foo">
       <footer id="footer-container">
         <a
           href="https://github.com/baby-got-hack/FlixList"
@@ -26,6 +27,7 @@ class Footer extends Component {
           Hollywood News
         </a>
       </footer>
+      </div>
     );
   }
 }
