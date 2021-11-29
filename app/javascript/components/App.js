@@ -16,11 +16,19 @@ class App extends Component {
     this.state = {
       movies: [],
       favorites: [],
+      fave_data: []
     };
   }
   componentDidMount() {
-    this.readMovies(), this.readFavorites();
+    this.readMovies(), this.readFavoriteMovieData(), this.readFavorites();
   }
+
+  readFavorites = () => {
+    fetch("/favorites")
+      .then((response) => response.json())
+      .then((payload) => this.setState({ favorites: payload }))
+      .catch((errors) => console.log("favorites index errors:", errors));
+  };
 
   readMovies = (genre) => {
     fetch(`/movies?genre=${genre}`)
@@ -29,10 +37,10 @@ class App extends Component {
       .catch((errors) => console.log("movie index errors:", errors));
   };
 
-  readFavorites = () => {
+  readFavoriteMovieData = () => {
     fetch("/favorites/movie_data")
       .then((response) => response.json())
-      .then((payload) => this.setState({ favorites: payload }))
+      .then((payload) => this.setState({ fave_data: payload }))
       .catch((errors) => console.log("favorites index errors:", errors));
   };
 
@@ -54,12 +62,13 @@ class App extends Component {
       .catch((errors) => console.log("create favorite errors:", errors));
   };
 
-  deleteFavorite = (id) => {
+  deleteFavorite = (id, movie_id, user_id) => {
     fetch(`favorites/${id}`, {
+      body: JSON.stringify({ movie_id, user_id }),
       headers: {
         "Content-Type": "application/json",
       },
-      method: "DELETE",
+      method: "DELETE"
     })
       .then((response) => {
         if (response.status === 422) {
@@ -92,7 +101,7 @@ class App extends Component {
                 render={(props) => {
                   return (
                     <Favorites
-                      favorites={this.state.favorites}
+                      movies={this.state.fave_data}
                       current_user={current_user}
                       deleteFavorite={this.deleteFavorite}
                     />

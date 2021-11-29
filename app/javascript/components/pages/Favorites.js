@@ -14,61 +14,71 @@ class Favorites extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fave_data: [],
+      favorites: [],
       movie_id: null,
       fav_id: null,
-    };
+    },
+    (this.id_match = this.id_match.bind(this))
   }
   componentDidMount() {
-    this.readFaveData();
+    this.readFavorites();
   }
 
-  readFaveData = () => {
+  componentWillUnmount
+
+  readFavorites = () => {
     fetch("/favorites")
       .then((response) => response.json())
-      .then((payload) => this.setState({ fave_data: payload }))
+      .then((payload) => this.setState({ favorites: payload }))
       .catch((errors) => console.log("favorites index errors:", errors));
   };
 
-  handleSubmit = (id) => {
-    console.log("Favorite deleted", id);
+  removeMovieId = () => {
+    this.setState({movie_id: null})
+    console.log("movie id cleared.", this.state.movie_id);
   };
+  
 
   id_match = (id) => {
-    this.setState({ movie_id: id})
+    this.setState({movie_id: id})
+    this.state.favorites.map(data => {
+      {if(this.state.movie_id === data.movie_id){
+        this.props.deleteFavorite(data.id, data.movie_id, data.user_id)
+        this.removeMovieId()
+      }}
+    })
   }
 
   render() {
-    const { favorites, current_user } = this.props;
+    const { movies, current_user } = this.props;
     const { fave_data } = this.state;
-    console.log("favorites:", favorites, "fave_data", fave_data);
-    console.log(this.state);
+
     return (
       <div className="body-container">
         <h1>This is the favorites page</h1>
-        {favorites &&
-          favorites.map((fav) => {
+        {movies &&
+          movies.map((mov) => {
             return (
-              <Card key={fav.id} color="dark" inverse className="bucket-card">
+              <Card key={mov.id} color="dark" inverse className="bucket-card">
                 <CardImg
                   alt="Card image cap"
-                  src={fav.img}
+                  src={mov.img}
                   top
                   width="100%"
                   id="card-img"
                 />
                 <CardBody>
-                  <CardTitle tag="h5">{fav.title}</CardTitle>
+                  <CardTitle tag="h5">{mov.title}</CardTitle>
 
                   <CardSubtitle className="mb-2 text-muted" tag="h6">
-                    Genre: {fav.genre}
+                    Genre: {mov.genre}
                     <br />
-                    Runtime: {fav.runtime}
+                    Runtime: {mov.runtime}
                   </CardSubtitle>
 
                   <Button
                     color="danger"
-                    onClick={() => this.id_match(fav.id)}
+                    onClick={() => this.id_match(mov.id)}
                   >
                     <FontAwesomeIcon icon={faTrash} /> Remove
                   </Button>

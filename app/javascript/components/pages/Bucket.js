@@ -16,7 +16,6 @@ class Bucket extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // movies: movies,
       submitted: false,
     };
   }
@@ -59,7 +58,6 @@ class Bucket extends Component {
                         >
                           <FontAwesomeIcon
                             icon={faStar}
-                            style={{ color: "#FFE401" }}
                           />{" "}
                           Add to Favorites
                         </Button>
