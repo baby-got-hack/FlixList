@@ -49,9 +49,10 @@ class Home extends Component {
             <a href={new_user_route}>Sign Up</a>
           </Button>
         </div>
+
         <div id="faq">
           <h1>Frequently asked questions</h1>
-          <UncontrolledAccordion defaultOpen={["1", "2", "3", "4"]} stayOpen id="faq-content">
+          <UncontrolledAccordion defaultOpen={["1", "2", "3"]} stayOpen id="faq-content">
             <AccordionItem className="faq-q-tab">
               <AccordionHeader targetId="1">How much does FlixList cost</AccordionHeader>
               <AccordionItem accordionid="1">

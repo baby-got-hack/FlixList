@@ -58,6 +58,7 @@ class Header extends Component {
             <>
               <Dropdown
                 className="header-btn"
+                id="hamburger-icon"
                 isOpen={dropdownOpen}
                 toggle={this.toggle}
               >
