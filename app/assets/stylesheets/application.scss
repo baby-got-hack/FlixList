@@ -84,28 +84,18 @@
   border: 1px solid #dc3545;
 }
 
-.aboutus-upper {
-  padding-top: 40px;
-  text-align: center;
-  background-color:black;
-  background-size: cover;
-}
-
 .aboutus-body {
-  padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(4, auto);
   align-items: center;
   column-gap: 20px;
   row-gap: 20px;
+  height: fit-content;
+  z-index: 1;
   .aboutus-card {
      padding: 0 10px 0 10px;
   }
 }
-.boob{
-  background-color: blueviolet;
-}
-
 // -------ENTERTAINMENT BUCKET-------------------
 
 .bucket-body {
@@ -134,10 +124,12 @@
   text-align: center;
   background-color: black;
 
+
   .footer-links {
     text-decoration: none;
      margin: 0 10px 0 10px;
-    color: rgb(129, 15, 15);
+    color: white;
+    z-index: 5;
   }
 
   .footer-links:hover {
