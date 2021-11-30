@@ -287,11 +287,15 @@
 
 // -----QUIZ PAGE------------
 .quiz-container{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- height: 86vh;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(2fr, 2fr));
+  column-gap: 20px;
+  //  padding: 200px;
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: center;
+//  align-items: center;
+//  height: 86vh;
 }
 
 // --------FAVORITES PAGE-------

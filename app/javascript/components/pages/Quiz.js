@@ -14,14 +14,24 @@ class Quiz extends Component {
       (this.onChangeValueType = this.onChangeValueType.bind(this));
   }
 
+  onChangeValueType(e) {
+    console.log(e.target.value);
+    this.setState({ tv_show: e.target.value });
+  }
+  
   onChangeValueGenre(e) {
     console.log(e.target.value);
     this.setState({ genre: e.target.value });
   }
 
-  onChangeValueType(e) {
+  onChangeValueReleaseDate(e) {
     console.log(e.target.value);
-    this.setState({ tv_show: e.target.value });
+    this.setState({ release_date: e.target.value });
+  }
+
+  onChangeValueRunTime(e) {
+    console.log(e.target.value);
+    this.setState({ runtime: e.target.value });
   }
 
   handleSubmit = () => {
@@ -34,8 +44,11 @@ class Quiz extends Component {
     console.log(this.state);
     return (
       <div className="body-container">
+        <h2>Entertainment Personality Quiz</h2>
+        <br />
         <div className="quiz-container">
-        <h2>Please Complete Your Entertainment Personality Quiz</h2>
+
+        <div id="question1">
         <Form onChange={this.onChangeValueType}>
           <FormGroup tag="fieldset">
             <legend>Whatcha feeling today?... Movie or Tv Show?</legend>
@@ -49,6 +62,9 @@ class Quiz extends Component {
             <Label check>TV Show</Label>
           </FormGroup>
         </Form>
+        </div>
+
+        <div id="question2">
         <Form onChange={this.onChangeValueGenre}>
           <FormGroup tag="fieldset">
             <legend>What genre are you in the mood for?</legend>
@@ -70,11 +86,49 @@ class Quiz extends Component {
             <Label check>Scare me if you can...I dare you!</Label>
           </FormGroup>
         </Form>
+        </div>
+
+        <div id="question3">
+        <Form onChange={this.onChangeValueReleaseDate}>
+          <FormGroup tag="fieldset">
+            <legend>How far back are we going?</legend>
+          </FormGroup>
+          <FormGroup check>
+            <Input name="radio1" type="radio" value={"false"} />{" "}
+            <Label check>Gimme some vintage flix (1960-1980s)</Label>
+          </FormGroup>
+          <FormGroup check>
+            <Input name="radio1" type="radio" value={"true"} />{" "}
+            <Label check>Fairly recent (1990-2020)</Label>
+          </FormGroup>
+          <FormGroup check>
+            <Input name="radio1" type="radio" value={"true"} />{" "}
+            <Label check>Newest releases (2021)</Label>
+          </FormGroup>
+        </Form>
+        </div>
+
+        <div id="question4">
+        <Form onChange={this.onChangeValueRunTime}>
+          <FormGroup tag="fieldset">
+            <legend>How long you got to watch?</legend>
+          </FormGroup>
+          <FormGroup check>
+            <Input name="radio1" type="radio" value={"false"} />{" "}
+            <Label check>Not much time. Keep it short.</Label>
+          </FormGroup>
+          <FormGroup check>
+            <Input name="radio1" type="radio" value={"true"} />{" "}
+            <Label check>I got all night babeeeyy!</Label>
+          </FormGroup>
+        </Form>
+        </div>
+      </div>
         <Button color="danger" onClick={this.handleSubmit}>
           Start Your Binge!
         </Button>
         {this.state.submitted && <Redirect to="/bucket" />}
-        </div>
+        
       </div>
     );
   }
