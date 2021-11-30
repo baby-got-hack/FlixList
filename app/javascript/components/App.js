@@ -8,6 +8,7 @@ import Quiz from "./pages/Quiz";
 import Bucket from "./pages/Bucket";
 import NotFound from "./pages/NotFound";
 
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -133,6 +134,7 @@ class App extends Component {
             )}
             <Route component={NotFound} />
           </Switch>
+          
           <Footer />
         </Router>
       </>

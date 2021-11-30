@@ -35,8 +35,7 @@ class Bucket extends Component {
             {this.props.movies &&
               this.props.movies.map((movie) => {
                 return (
-                  <CardGroup key={movie.id}>
-                    <Card color="dark" inverse className="bucket-card">
+                    <Card key={movie.id} color="dark" inverse className="bucket-card">
                       <CardImg
                         alt="Card image cap"
                         src={movie.img}
@@ -63,7 +62,6 @@ class Bucket extends Component {
                         </Button>
                       </CardBody>
                     </Card>
-                  </CardGroup>
                 );
               })}
           </div>

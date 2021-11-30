@@ -14,8 +14,8 @@
   background-color: black;
   justify-content: space-between;
   #logo-img {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 125px;
   }
 }
 
@@ -31,13 +31,38 @@
 
   .header-btn {
     margin: 0 7px 0 7px;
+    display: flex;
+    justify-content: center;
+    height: 43px;
+    width: 100px;
+    font-size: 1.2rem;
+  }
+  #hamburger-icon {
+    height: 48px;
+    width: 50px;
   }
 }
 
 // --------HAMBURGER TOGGLE----------------------
 
 .dropdown-menu.dropdown-menu-dark.show {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  width: 400px;
   text-align: center;
+  .dropdown-item {
+    height: 64px;
+    font-size: 20px;
+  }
+  .dropdown-item:focus {
+    color: rgb(249, 60, 60);
+  }
+  .dropdown-item:active {
+    color: #3f444a;
+  }
   a {
     text-decoration: none;
     color: white;
@@ -53,27 +78,163 @@
   background-image: url("https://i.imgur.com/U2xJacL.jpg");
   background-size: cover;
   height: 90vh;
-}
-
-.body-container {
-  background-color: black;
-  height: 80vh;
+  color: red;
+  h1 {
+    padding: 100px 0 0 0;
+    font-size: 60px;
+  }
+  h2 {
+    margin: 50px 0 0 0;
+  }
+  h5 {
+    margin: 55px 0 10px 0;
+    font-size: 20px;
+    color: rgb(220, 220, 220);
+  }
 }
 
 #home-signup-button {
   width: 420px;
   height: 69px;
   font-size: 36px;
+  font-weight: bold;
   a {
     text-decoration: none;
     color: white;
   }
 }
 
+.body-container {
+  background-color: black;
+  height: fit-content;
+}
+
+// ---------PITCH SECTION----------
+.pitch-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pitch3,
+#pitch4 {
+  border: 7px solid rgb(38, 38, 38);
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  width: 99vw;
+  height: 350px;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+#pitch3 {
+  justify-content: space-evenly;
+  border-bottom: none;
+
+  #pitch3-text {
+    justify-content: flex-start;
+    display: flex;
+    width: 550px;
+    margin-left: 25px;
+    text-align: center;
+    h4 {
+      font-size: 36px;
+    }
+  }
+
+  #pitch3-img {
+    justify-content: flex-end;
+    display: flex;
+    width: 600px;
+    margin-right: 25px;
+
+    #quiz-img {
+      height: 250px;
+      width: 300px;
+      box-shadow: 1em 0.5em 0.4em rgba(249, 78, 52, 0.551);
+    }
+  }
+}
+
+#pitch4 {
+  justify-content: flex-end;
+
+  #pitch4-text {
+    justify-content: flex-end;
+    display: flex;
+    width: 550px;
+    margin-right: 250px;
+    text-align: center;
+    h4 {
+      font-size: 36px;
+    }
+  }
+
+  #pitch4-img {
+    justify-content: flex-start;
+    display: flex;
+    width: 600px;
+    margin-right: 25px;
+
+    #bucket-img {
+      height: 250px;
+      width: 300px;
+      box-shadow: -1em -0.5em -0.4em rgba(249, 78, 52, 0.551);
+    }
+  }
+}
+
+// -----------FAQ SECTION--------------------------
 #faq {
-  height: 80vh;
+  height: 88vh;
   background-color: black;
   text-align: center;
+}
+
+#faq-content {
+  margin: 50px 20% 0 20%;
+}
+
+.accordion-button.collapsed::after {
+  background-image: image-url("plus-solid.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: image-url("minus-solid.svg");
+}
+
+.accordion-item {
+  background-color: #1e1e1e;
+}
+
+.faq-ans {
+  display: none;
+}
+
+.display-content {
+  text-align: center;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+}
+
+.accordion-button {
+  background-color: rgb(26, 26, 26);
+  color: white;
+  font-size: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgb(26, 26, 26);
+  color: rgb(195, 195, 195);
+  font-size: 20px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
 }
 
 // -----ABOUT US---------------------------
@@ -102,18 +263,44 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   align-items: center;
-  column-gap: 10px;
+  column-gap: 2px;
   row-gap: 20px;
 }
 
 .bucket-card {
-  height: 575px;
-  width: 400px;
+  height: 799px;
+  width: 464px;
   align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #card-img {
-  height: 400px;
+  height: 649.86px;
+  width: 434px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+
+// -----QUIZ PAGE------------
+.quiz-container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 86vh;
+}
+
+// --------FAVORITES PAGE-------
+.favorites-body {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  column-gap: 2px;
+  row-gap: 20px;
 }
 
 // ------FOOTER---------------------------------
@@ -140,7 +327,7 @@
 // ------SCROLL BAR RIGHT SIDE-----------------
 
 body::-webkit-scrollbar {
-  width: 0.5em;
+  width: 0.8em;
 }
 body::-webkit-scrollbar-track {
   background-color: black;
@@ -150,19 +337,19 @@ body::-webkit-scrollbar-thumb {
   border-radius: 25px;
 }
 
-.devise-element{
+.devise-element {
   display: center;
   justify-content: center;
   text-align: center;
   background-color: rgb(31, 76, 123);
 }
 
-.devise-container{
+.devise-container {
   height: 90vh;
   text-align: center;
   background-color: black;
 }
 
-.devise-box{
-  background-color: rgb(31, 76, 123);
+.devise-box {
+  background-color: rgb(147, 64, 64);
 }

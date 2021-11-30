@@ -34,18 +34,18 @@ class Quiz extends Component {
     console.log(this.state);
     return (
       <div className="body-container">
-        <h1>This is the quiz page</h1>
-
+        <div className="quiz-container">
+        <h2>Please Complete Your Entertainment Personality Quiz</h2>
         <Form onChange={this.onChangeValueType}>
           <FormGroup tag="fieldset">
             <legend>Whatcha feeling today?... Movie or Tv Show?</legend>
           </FormGroup>
           <FormGroup check>
-            <Input name="radio1" type="radio" value={false} />{" "}
+            <Input name="radio1" type="radio" value={"false"} />{" "}
             <Label check>Movie</Label>
           </FormGroup>
           <FormGroup check>
-            <Input name="radio1" type="radio" value={true} />{" "}
+            <Input name="radio1" type="radio" value={"true"} />{" "}
             <Label check>TV Show</Label>
           </FormGroup>
         </Form>
@@ -74,6 +74,7 @@ class Quiz extends Component {
           Start Your Binge!
         </Button>
         {this.state.submitted && <Redirect to="/bucket" />}
+        </div>
       </div>
     );
   }
