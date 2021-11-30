@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-import mockPic from "../mockFile";
+
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -15,6 +15,6 @@ describe(" when header renders", () => {
 
   it("displays an image", () => {
     const logo = shallow(<Header />);
-    expect(logo.find("img").prop("src")).toEqual(mockPic);
+    expect(logo.find("img").prop("src")).toEqual("Logo4.png");
   });
 });

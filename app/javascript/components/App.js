@@ -17,18 +17,12 @@ class App extends Component {
     this.state = {
       movies: [],
       favorites: [],
+      fave_data: []
     };
   }
-  componentDidMount(){
-    this.readMovies()
+  componentDidMount() {
+    this.readMovies(), this.readFavoriteMovieData(), this.readFavorites();
   }
-
-  readMovies = () => {
-    fetch("/movies")
-      .then((response) => response.json())
-      .then((payload) => this.setState({ movies: payload }))
-      .catch((errors) => console.log("movie index errors:", errors));
-  };
 
   readFavorites = () => {
     fetch("/favorites")
@@ -37,9 +31,23 @@ class App extends Component {
       .catch((errors) => console.log("favorites index errors:", errors));
   };
 
+  readMovies = (genre, tv_show) => {
+    fetch(`/movies?genre=${genre}&tv_show=${tv_show}`)
+      .then((response) => response.json())
+      .then((payload) => this.setState({ movies: payload }))
+      .catch((errors) => console.log("movie index errors:", errors));
+  };
+
+  readFavoriteMovieData = () => {
+    fetch("/favorites/movie_data")
+      .then((response) => response.json())
+      .then((payload) => this.setState({ fave_data: payload }))
+      .catch((errors) => console.log("favorites index errors:", errors));
+  };
+
   createFavorite = (movie_id, user_id) => {
     fetch("/favorites", {
-      body: JSON.stringify({movie_id, user_id}),
+      body: JSON.stringify({ movie_id, user_id }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -53,6 +61,24 @@ class App extends Component {
       })
       .then(() => this.readFavorites())
       .catch((errors) => console.log("create favorite errors:", errors));
+  };
+
+  deleteFavorite = (id, movie_id, user_id) => {
+    fetch(`favorites/${id}`, {
+      body: JSON.stringify({ movie_id, user_id }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "DELETE"
+    })
+      .then((response) => {
+        if (response.status === 422) {
+          alert("Something went wrong with this deletion.");
+        }
+        return response.json();
+      })
+      .then(() => this.readFavorites())
+      .catch((errors) => console.log("delete errors:", errors));
   };
 
   render() {
@@ -72,14 +98,26 @@ class App extends Component {
             <Route path="/aboutus" component={AboutUs} />
             {logged_in && (
               <Route
-                path="/favorites"
+                path="/yourfavorites"
                 render={(props) => {
-                  let favorites = this.state.favorites.filter(
-                    (f) => f.user_id === current_user.id
+                  return (
+                    <Favorites
+                      movies={this.state.fave_data}
+                      current_user={current_user}
+                      deleteFavorite={this.deleteFavorite}
+                    />
                   );
-                  return <Favorites favorites={favorites} />;
-                }}/>)}
-            {logged_in && <Route path="/quiz" component={Quiz} />}
+                }}
+              />
+            )}
+            {logged_in && (
+              <Route
+                path="/quiz"
+                render={() => {
+                  return <Quiz populateBucket={this.readMovies} />;
+                }}
+              />
+            )}
             {logged_in && (
               <Route
                 path="/bucket"
@@ -91,7 +129,9 @@ class App extends Component {
                       current_user={current_user}
                     />
                   );
-                }}/> )}
+                }}
+              />
+            )}
             <Route component={NotFound} />
           </Switch>
           

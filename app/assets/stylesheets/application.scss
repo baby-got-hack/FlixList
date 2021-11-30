@@ -108,7 +108,7 @@
 
 .body-container {
   background-color: black;
-  height: 80vh;
+  height: fit-content;
 }
 
 // ---------PITCH SECTION----------
@@ -251,43 +251,62 @@
   border: 1px solid #dc3545;
 }
 
-.aboutus-upper {
-  padding-top: 40px;
-  text-align: center;
-  background-color: black;
-  background-size: cover;
-}
-
 .aboutus-body {
-  padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(4, auto);
   align-items: center;
   column-gap: 20px;
   row-gap: 20px;
+  height: fit-content;
+  z-index: 1;
   .aboutus-card {
-    padding: 0 10px 0 10px;
+     padding: 0 10px 0 10px;
   }
 }
-
 // -------ENTERTAINMENT BUCKET-------------------
 
 .bucket-body {
   display: grid;
   grid-template-columns: repeat(3, auto);
   align-items: center;
-  column-gap: 10px;
+  column-gap: 2px;
   row-gap: 20px;
 }
 
 .bucket-card {
-  height: 575px;
-  width: 400px;
+  height: 799px;
+  width: 464px;
   align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #card-img {
-  height: 400px;
+  height: 649.86px;
+  width: 434px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+
+// -----QUIZ PAGE------------
+.quiz-container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 86vh;
+}
+
+// --------FAVORITES PAGE-------
+.favorites-body {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  column-gap: 2px;
+  row-gap: 20px;
 }
 
 // ------FOOTER---------------------------------
@@ -298,10 +317,12 @@
   text-align: center;
   background-color: black;
 
+
   .footer-links {
     text-decoration: none;
-    margin: 0 30px 0 30px;
+     margin: 0 10px 0 10px;
     color: white;
+    z-index: 5;
   }
 
   .footer-links:hover {
@@ -337,5 +358,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 .devise-box {
-  background-color: rgb(31, 76, 123);
+  background-color: rgb(147, 64, 64);
 }
