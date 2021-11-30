@@ -78,11 +78,45 @@
   background-image: url("https://i.imgur.com/U2xJacL.jpg");
   background-size: cover;
   height: 90vh;
+  color: red;
 }
 
 .body-container {
   background-color: black;
   height: 80vh;
+}
+
+.pitch-center {
+  text-align: center;
+}
+
+.pitch-left {
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: row;
+  text-align: left;
+  width: 350px;
+}
+
+.pitch-quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 20px;
+  
+}
+
+.quiz-image {
+  padding-left: 30px;
+  height: 200px;
+  width: 250px;
+  border: 1px solid red;
+}
+
+.pitch-right {
+  text-align: right;
+  padding-right: 30px;
 }
 
 #home-signup-button {

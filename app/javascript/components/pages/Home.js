@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Quiz from "../assets/Personality-quiz.png";
 import {
   Button,
   UncontrolledAccordion,
@@ -54,32 +55,36 @@ class Home extends Component {
         <div className="home-upper">
           <h1>Welcome to FlixList!</h1>
           <br />
-          <h3 className="pitch-left">
-            Ugh! That feeling when you’re sure you’ve watched every movie or TV
-            series on the world wide web...
+          <h3 className="pitch-center">
+            Feels like you’ve watched every movie or TV series on the world wide web?...
           </h3>
           <br />
-          <h3 className="pitch-right">
-            But there is no way Hollywood would leave you stranded like that!
+          <h3 className="pitch-center">
+            Hollywood would never leave you stranded like that!
           </h3>
           <br />
-          <br />
+          <div className="pitch-quiz">
           <h4 className="pitch-left">
-            Entertainment Personality Quiz: Let FlixList scour all the top
-            streaming services based on YOUR entertainment personality.
+            Let us search all the top streaming services based on YOUR Entertainment Personality.
           </h4>
+          <img src={Quiz} className="quiz-image"/>
+          </div>
+          <br />
+          <br />
           <br />
           <h4 className="pitch-right">
-            {" "}
-            Your Viewing Bucket: FlixList will make sure your Entertainment
-            bucket is never empty.
+            Your Viewing Bucket: FlixList will make sure your Entertainment bucket is never empty.
           </h4>
           <br />
-          <h4 className="pitch-left">
-            It’s that easy! So stop the endless surfing...
+          <br />
+          <br />
+          <br />
+          <br />
+          <h4 className="pitch-center">
+            So stop the endless surfing...
           </h4>
           <br />
-          <h4 className="pitch-right">
+          <h4 className="pitch-center">
             Flixlist makes it so you don’t have to waste time, while wasting
             time.
           </h4>
