@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Quiz from "../assets/Personality-quiz.png";
 import Bucket from "../assets/Bucket.png";
+import { NavLink } from "react-router-dom";
 import {
   Button,
   UncontrolledAccordion,
@@ -12,10 +13,10 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      close1: false,
-      close2: false,
-      close3: false,
-      close4: false,
+      close1: true,
+      close2: true,
+      close3: true,
+      close4: true,
     };
   }
 
@@ -54,31 +55,37 @@ class Home extends Component {
     return (
       <>
         <div className="home-upper">
-          <h1>Welcome to FlixList</h1>
-          <h2>
-            Feel like you’ve watched every movie or TV series on the world wide
-            web?
-          </h2>
-          <h2>
-            Hollywood would NEVER leave you stranded like that!
-          </h2>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <h3>Stop the endless surfing...</h3>
-          <br />
-          <Button color="danger" id="home-signup-button">
-            <a href={new_user_route}>Sign Up</a>
-          </Button>
-          <br />
-          <br />
+          {!logged_in && (
+            <>
+              <h1>Welcome to FlixList</h1>
+              <h2>
+                Feel like you’ve watched every movie or TV series on the world
+                wide web?
+              </h2>
+              <h3>Hollywood would NEVER leave you stranded like that!</h3>
+              <h5>Stop the endless surfing...</h5>
+              <Button color="danger" id="home-signup-button">
+                <a href={new_user_route}>Sign Up</a>
+              </Button>
           <h2>
             {" "}
             Flixlist makes it so you don’t have to waste time, while wasting
             time.
           </h2>
+            </>
+          )}
+          {logged_in && (
+            <>
+            <h1>Welcome Back to FlixList</h1>
+            <h2>Ready for more personalized recommendations?</h2>
+            <h5>Then what are you waiting for?!</h5>
+            <Button color="danger" id="home-signup-button">
+              <NavLink to="/quiz">Take Personality Quiz</NavLink>
+            </Button>
+            <h2>It's about time you got back to watching 😉</h2>
+            </>
+          )}
+
         </div>
         <div className="pitch-container">
           <div id="pitch3">
@@ -102,13 +109,11 @@ class Home extends Component {
                 bucket is never empty.
               </h4>
             </div>
-            
           </div>
         </div>
         <div id="faq">
           <h1>Frequently Asked Questions</h1>
           <UncontrolledAccordion
-            defaultOpen={["1", "2", "3", "4"]}
             stayOpen
             id="faq-content"
           >

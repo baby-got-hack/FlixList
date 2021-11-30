@@ -55,13 +55,15 @@
   text-align: center;
   .dropdown-item {
     height: 64px;
+    width: 396px;
     font-size: 20px;
   }
   .dropdown-item:focus {
     color: rgb(249, 60, 60);
   }
   .dropdown-item:active {
-    color: #3f444a;
+    background-color: #565656 !important;
+    color: rgb(249, 60, 60);
   }
   a {
     text-decoration: none;
@@ -155,14 +157,14 @@
     #quiz-img {
       height: 250px;
       width: 300px;
-      box-shadow: 1em 0.5em 0.4em rgba(249, 78, 52, 0.551);
+      box-shadow: 11px 13px 26px 4px rgba(249,78,52,0.55);
     }
   }
 }
 
 #pitch4 {
   justify-content: space-evenly;
-  // justify-content: flex-end;
+
 
   #pitch4-text {
     justify-content: flex-end;
@@ -185,37 +187,15 @@
     #bucket-img {
       height: 250px;
       width: 300px;
-      box-shadow: -1em -0.5em -0.4em rgba(249, 78, 52, 0.551);
+      box-shadow: 11px 13px 26px 4px rgba(249,78,52,0.55);
     }
   }
 }
 
-// .pitch-center {
-//   text-align: center;
-// }
-
-// .pitch-left {
-//   text-align: left;
-//   width: 350px;
-// }
-
-// .pitch-quiz {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: row;
-//   padding-right: 20px;
-
-// }
-
-// .pitch-right {
-//   text-align: right;
-// }
-
 // -----------FAQ SECTION--------------------------
 #faq {
   padding-top: 30px;
-  height: 88vh;
+  height: 90vh;
   background-color: black;
   text-align: center;
 }
@@ -342,6 +322,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 25px;
 }
 
+// --------DEVISE PAGES------
 .devise-element {
   display: center;
   justify-content: center;

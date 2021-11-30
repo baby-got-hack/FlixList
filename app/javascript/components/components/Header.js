@@ -66,18 +66,26 @@ class Header extends Component {
                   <FontAwesomeIcon icon={faBars} size="2x" />
                 </DropdownToggle>
                 <DropdownMenu dark container="body">
+                <NavLink to="/bucket">
                   <DropdownItem>
-                    <NavLink to="/bucket"> Entertainment Bucket</NavLink>
+                     Entertainment Bucket
                   </DropdownItem>
+                  </NavLink>
+                  <NavLink to="/quiz">
                   <DropdownItem>
-                    <NavLink to="/quiz"> Personality Quiz</NavLink>
+                    Personality Quiz
                   </DropdownItem>
+                  </NavLink>
+                  <NavLink to="/favorites">
                   <DropdownItem>
-                    <NavLink to="/favorites">Your Favorites</NavLink>
+                    Your Favorites
                   </DropdownItem>
+                  </NavLink>
+                  <a href={sign_out_route}>
                   <DropdownItem>
-                    <a href={sign_out_route}>Log Out</a>
+                    Log Out
                   </DropdownItem>
+                  </a>
                 </DropdownMenu>
               </Dropdown>
             </>
