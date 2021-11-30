@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import pic from "../assets/Logo4.png";
 import { NavLink } from "react-router-dom";
 import {
   Button,
@@ -40,7 +39,7 @@ class Header extends Component {
     return (
       <div className="header-container">
         <NavLink to="/">
-          <img id="logo-img" src={pic} alt="flixlist logo"></img>
+          <img id="logo-img" src="Logo4.png" alt="flixlist logo"></img>
         </NavLink>
         <div className="nav-bar">
           {!logged_in && (
