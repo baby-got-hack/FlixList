@@ -53,45 +53,62 @@ class Home extends Component {
     return (
       <>
         <div className="home-upper">
-          <h1>Welcome to FlixList!</h1>
-          <br />
-          <h3 className="pitch-center">
-            Feels like you’ve watched every movie or TV series on the world wide web?...
-          </h3>
-          <br />
-          <h3 className="pitch-center">
-            Hollywood would never leave you stranded like that!
-          </h3>
-          <br />
-          <div className="pitch-quiz">
-          <h4 className="pitch-left">
-            Let us search all the top streaming services based on YOUR Entertainment Personality.
-          </h4>
-          <img src={Quiz} className="quiz-image"/>
-          </div>
-          <br />
-          <br />
-          <br />
-          <h4 className="pitch-right">
-            Your Viewing Bucket: FlixList will make sure your Entertainment bucket is never empty.
-          </h4>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <h4 className="pitch-center">
-            So stop the endless surfing...
-          </h4>
-          <br />
-          <h4 className="pitch-center">
-            Flixlist makes it so you don’t have to waste time, while wasting
-            time.
-          </h4>
-          <br />
+          <h1>Welcome to FlixList</h1>
+          <h2>
+            Feel like you’ve watched every movie or TV series on the world wide
+            web?
+          </h2>
+          <h5>What are you waiting for? Sign Up Today!</h5>
           <Button color="danger" id="home-signup-button">
             <a href={new_user_route}>Sign Up</a>
           </Button>
+          <h2>
+            {" "}
+            Flixlist makes it so you don’t have to waste time, while wasting
+            time.
+          </h2>
+        </div>
+        <div className="pitch-container">
+          {/* <div id="pitch1">
+            <h3 id="pitch1-text">
+              Feels like you’ve watched every movie or TV series on the world
+              wide web?...
+            </h3>
+          </div>
+          <div id="pitch2">
+            <h3 id="pitch2-text">
+              Hollywood would never leave you stranded like that!
+            </h3>
+          </div> */}
+          <div id="pitch3">
+            <div id="pitch3-text">
+              <h4>
+                Let us search all the top streaming services based on YOUR
+                Entertainment Personality.
+              </h4>
+            </div>
+            <div id="pitch3-img">
+              <img src={Quiz} id="quiz-img" />
+            </div>
+          </div>
+          <div id="pitch4">
+            <div id="pitch4-text">
+              <h4>
+                Your Viewing Bucket: FlixList will make sure your Entertainment
+                bucket is never empty.
+              </h4>
+            </div>
+            <div id="pitch4-img">
+              {/* <img src={Bucket} id="bucket-img" /> */}
+            </div>
+          </div>
+
+          {/* <h4 className="pitch-center">So stop the endless surfing...</h4>
+
+          <h4 className="pitch-center">
+            Flixlist makes it so you don’t have to waste time, while wasting
+            time.
+          </h4> */}
         </div>
         <div id="faq">
           <h1>Frequently asked questions</h1>

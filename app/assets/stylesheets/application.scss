@@ -79,44 +79,18 @@
   background-size: cover;
   height: 90vh;
   color: red;
-}
-
-.body-container {
-  background-color: black;
-  height: 80vh;
-}
-
-.pitch-center {
-  text-align: center;
-}
-
-.pitch-left {
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: row;
-  text-align: left;
-  width: 350px;
-}
-
-.pitch-quiz {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding-right: 20px;
-  
-}
-
-.quiz-image {
-  padding-left: 30px;
-  height: 200px;
-  width: 250px;
-  border: 1px solid red;
-}
-
-.pitch-right {
-  text-align: right;
-  padding-right: 30px;
+  h1 {
+    padding: 100px 0 0 0;
+    font-size: 60px;
+  }
+  h2 {
+    margin: 50px 0 0 0;
+  }
+  h5 {
+    margin: 55px 0 10px 0;
+    font-size: 20px;
+    color: rgb(220, 220, 220);
+  }
 }
 
 #home-signup-button {
@@ -129,6 +103,111 @@
     color: white;
   }
 }
+
+.body-container {
+  background-color: black;
+  height: 80vh;
+}
+
+// ---------PITCH SECTION----------
+.pitch-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pitch3,
+#pitch4 {
+  border: 7px solid rgb(38, 38, 38);
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  width: 99vw;
+  height: 350px;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+#pitch3 {
+  justify-content: space-evenly;
+  border-bottom: none;
+
+  #pitch3-text {
+    justify-content: flex-start;
+    display: flex;
+    width: 550px;
+    margin-left: 25px;
+    text-align: center;
+    h4 {
+      font-size: 36px;
+    }
+  }
+
+  #pitch3-img {
+    justify-content: flex-end;
+    display: flex;
+    width: 600px;
+    margin-right: 25px;
+
+    #quiz-img {
+      height: 250px;
+      width: 300px;
+      box-shadow: 1em 0.5em 0.4em rgba(249, 78, 52, 0.551);
+    }
+  }
+}
+
+#pitch4 {
+  justify-content: flex-end;
+
+  #pitch4-text {
+    justify-content: flex-end;
+    display: flex;
+    width: 550px;
+    margin-right: 250px;
+    text-align: center;
+    h4 {
+      font-size: 36px;
+    }
+  }
+
+  #pitch4-img {
+    justify-content: flex-start;
+    display: flex;
+    width: 600px;
+    margin-right: 25px;
+
+    #bucket-img {
+      height: 250px;
+      width: 300px;
+      box-shadow: -1em -0.5em -0.4em rgba(249, 78, 52, 0.551);
+    }
+  }
+}
+
+// .pitch-center {
+//   text-align: center;
+// }
+
+// .pitch-left {
+//   text-align: left;
+//   width: 350px;
+// }
+
+// .pitch-quiz {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: row;
+//   padding-right: 20px;
+
+// }
+
+// .pitch-right {
+//   text-align: right;
+// }
 
 // -----------FAQ SECTION--------------------------
 #faq {
@@ -165,13 +244,13 @@
 }
 
 .accordion-button {
-  background-color: rgb(18, 18, 18);
+  background-color: rgb(26, 26, 26);
   color: white;
   font-size: 20px;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: rgb(18, 18, 18);
+  background-color: rgb(26, 26, 26);
   color: rgb(195, 195, 195);
   font-size: 20px;
 }
