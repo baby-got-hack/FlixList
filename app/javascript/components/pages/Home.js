@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Quiz from "../assets/Personality-quiz.png";
+import Bucket from "../assets/Bucket.png";
 import {
   Button,
   UncontrolledAccordion,
@@ -58,10 +59,21 @@ class Home extends Component {
             Feel like you’ve watched every movie or TV series on the world wide
             web?
           </h2>
-          <h5>What are you waiting for? Sign Up Today!</h5>
+          <h2>
+            Hollywood would NEVER leave you stranded like that!
+          </h2>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h3>Stop the endless surfing...</h3>
+          <br />
           <Button color="danger" id="home-signup-button">
             <a href={new_user_route}>Sign Up</a>
           </Button>
+          <br />
+          <br />
           <h2>
             {" "}
             Flixlist makes it so you don’t have to waste time, while wasting
@@ -69,17 +81,6 @@ class Home extends Component {
           </h2>
         </div>
         <div className="pitch-container">
-          {/* <div id="pitch1">
-            <h3 id="pitch1-text">
-              Feels like you’ve watched every movie or TV series on the world
-              wide web?...
-            </h3>
-          </div>
-          <div id="pitch2">
-            <h3 id="pitch2-text">
-              Hollywood would never leave you stranded like that!
-            </h3>
-          </div> */}
           <div id="pitch3">
             <div id="pitch3-text">
               <h4>
@@ -92,26 +93,20 @@ class Home extends Component {
             </div>
           </div>
           <div id="pitch4">
+            <div id="pitch4-img">
+              <img src={Bucket} id="bucket-img" />
+            </div>
             <div id="pitch4-text">
               <h4>
                 Your Viewing Bucket: FlixList will make sure your Entertainment
                 bucket is never empty.
               </h4>
             </div>
-            <div id="pitch4-img">
-              {/* <img src={Bucket} id="bucket-img" /> */}
-            </div>
+            
           </div>
-
-          {/* <h4 className="pitch-center">So stop the endless surfing...</h4>
-
-          <h4 className="pitch-center">
-            Flixlist makes it so you don’t have to waste time, while wasting
-            time.
-          </h4> */}
         </div>
         <div id="faq">
-          <h1>Frequently asked questions</h1>
+          <h1>Frequently Asked Questions</h1>
           <UncontrolledAccordion
             defaultOpen={["1", "2", "3", "4"]}
             stayOpen
@@ -119,7 +114,7 @@ class Home extends Component {
           >
             <AccordionItem>
               <AccordionHeader targetId="1" onClick={this.toggle1}>
-                How much does FlixList cost
+                How much does FlixList cost?
               </AccordionHeader>
               <AccordionItem
                 accordionid="1"
