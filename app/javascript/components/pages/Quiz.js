@@ -25,7 +25,7 @@ class Quiz extends Component {
   }
 
   handleSubmit = () => {
-    this.props.populateBucket(this.state.genre);
+    this.props.populateBucket(this.state.genre, this.state.tv_show);
     console.log("submitted");
     this.setState({ submitted: true });
   };
