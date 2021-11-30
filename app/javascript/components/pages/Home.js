@@ -69,17 +69,6 @@ class Home extends Component {
           </h2>
         </div>
         <div className="pitch-container">
-          {/* <div id="pitch1">
-            <h3 id="pitch1-text">
-              Feels like you’ve watched every movie or TV series on the world
-              wide web?...
-            </h3>
-          </div>
-          <div id="pitch2">
-            <h3 id="pitch2-text">
-              Hollywood would never leave you stranded like that!
-            </h3>
-          </div> */}
           <div id="pitch3">
             <div id="pitch3-text">
               <h4>
@@ -103,12 +92,6 @@ class Home extends Component {
             </div>
           </div>
 
-          {/* <h4 className="pitch-center">So stop the endless surfing...</h4>
-
-          <h4 className="pitch-center">
-            Flixlist makes it so you don’t have to waste time, while wasting
-            time.
-          </h4> */}
         </div>
         <div id="faq">
           <h1>Frequently asked questions</h1>
