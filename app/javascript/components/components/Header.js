@@ -74,7 +74,7 @@ class Header extends Component {
                     <NavLink to="/quiz"> Personality Quiz</NavLink>
                   </DropdownItem>
                   <DropdownItem>
-                    <NavLink to="/favorites">Your Favorites</NavLink>
+                    <NavLink to="/yourfavorites">Your Favorites</NavLink>
                   </DropdownItem>
                   <DropdownItem>
                     <a href={sign_out_route}>Log Out</a>
