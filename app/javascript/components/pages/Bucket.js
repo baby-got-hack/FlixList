@@ -49,7 +49,7 @@ class Bucket extends Component {
                         <CardSubtitle className="mb-2 text-muted" tag="h6">
                           Genre: {movie.genre}
                           <br />
-                          Runtime: {movie.runtime}
+                          Runtime: {movie.runtime} mins
                         </CardSubtitle>
                         <Button
                           color="warning"

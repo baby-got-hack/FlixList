@@ -114,11 +114,11 @@ class Quiz extends Component {
             <legend>How long you got to watch?</legend>
           </FormGroup>
           <FormGroup check>
-            <Input name="radio1" type="radio" value={"false"} />{" "}
+            <Input name="radio1" type="radio" value={""} />
             <Label check>Not much time. Keep it short.</Label>
           </FormGroup>
           <FormGroup check>
-            <Input name="radio1" type="radio" value={"true"} />{" "}
+            <Input name="radio1" type="radio" value={""} />
             <Label check>I got all night babeeeyy!</Label>
           </FormGroup>
         </Form>
