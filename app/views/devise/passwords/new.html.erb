@@ -1,18 +1,33 @@
 <div class="devise-container">
+<div class="forgot-background">
+<div class="padding-devise">
+
 <h2>Forgot your password?</h2>
 
+<div class="margin-devise">
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
+</>
 
+<div class="margin-devise">
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "devise-box" %>
   </div>
+</>
 
+<div class="margin-devise">
   <div class="actions">
     <%= f.submit "Send me reset password instructions", :class => "devise-element" %>
   </div>
+  </>
+
 <% end %>
+
+<div class="margin-devise">
+<%= render "devise/shared/links" %>
+</>
+
 </div>
 
-<%= render "devise/shared/links" %>
+

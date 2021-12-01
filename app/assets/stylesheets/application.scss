@@ -341,15 +341,49 @@ body::-webkit-scrollbar-thumb {
   display: center;
   justify-content: center;
   text-align: center;
-  background-color: rgb(31, 76, 123);
+  background-color: #dc3545;
 }
 
 .devise-container {
   height: 90vh;
   text-align: center;
   background-color: black;
+  a{
+    color:white;
+    text-decoration:none;
+  }
+  a:hover{
+    color:red;
+  }
 }
 
 .devise-box {
-  background-color: rgb(147, 64, 64);
+  background-color: black;
+}
+
+.login-background {
+  background-image: url("https://i.imgur.com/hfDLpQT.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.signup-background {
+  background-image: url("https://i.imgur.com/jc4Vy1m.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.forgot-background {
+  background-image: url("https://i.imgur.com/ug7NCe2.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.padding-devise {
+  line-height: 20px;
+  padding: 15px;
+}
+
+.margin-devise {
+  margin: 10px;
 }
