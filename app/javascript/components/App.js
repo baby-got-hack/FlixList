@@ -77,7 +77,7 @@ class App extends Component {
         }
         return response.json();
       })
-      .then(() => this.readFavorites())
+      .then(() => this.readFavoriteMovieData())
       .catch((errors) => console.log("delete errors:", errors));
   };
 

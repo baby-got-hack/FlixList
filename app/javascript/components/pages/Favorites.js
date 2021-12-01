@@ -55,7 +55,7 @@ class Favorites extends Component {
 
     return (
       <div className="body-container">
-        <h1>This is the favorites page</h1>
+        <h1>Your Favorites</h1>
         <div className="favorites-body">
         {movies &&
           movies.map((mov) => {
