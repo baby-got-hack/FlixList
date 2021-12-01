@@ -259,6 +259,7 @@
   row-gap: 20px;
   height: fit-content;
   z-index: 1;
+  padding: 62px 0 0 0;
   .aboutus-card {
      padding: 0 10px 0 10px;
   }
@@ -288,6 +289,17 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
+}
+
+#to-faves-btn{
+  text-align: center;
+  margin: 100px 0 0 0;
+  padding: 0 0 100px 0;
+  .btn {
+    width: 206.91px;
+    height: 57px;
+    font-size: 24px;
+  }
 }
 
 
@@ -321,6 +333,7 @@
   .footer-links {
     text-decoration: none;
      margin: 0 10px 0 10px;
+     padding: 10px 0 0 30px;
     color: white;
     z-index: 5;
   }
