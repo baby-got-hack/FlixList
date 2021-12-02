@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 2021_12_01_234111) do
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.string "genre"
-    t.string "release_date"
-    t.string "runtime"
+    t.integer "release_date"
+    t.integer "runtime"
     t.boolean "movie"
     t.boolean "tv_show"
     t.integer "seasons"
