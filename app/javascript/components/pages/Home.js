@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Quiz from "../assets/Personality-quiz.png";
-import Bucket from "../assets/Bucket.png";
+import Quiz from "../assets/Personality-quiz2.png";
+import Bucket from "../assets/Bucket2.png";
 import { NavLink } from "react-router-dom";
 import {
   Button,
@@ -62,7 +62,7 @@ class Home extends Component {
                 Feel like you’ve watched every movie or TV series on the world
                 wide web?
               </h2>
-              <h3>Hollywood would NEVER leave you stranded like that!</h3>
+              <h2>Hollywood would NEVER leave you stranded like that!</h2>
               <h5>Stop the endless surfing...</h5>
               <Button color="danger" id="home-signup-button">
                 <a href={new_user_route}>Sign Up</a>
@@ -95,6 +95,7 @@ class Home extends Component {
                 Entertainment Personality.
               </h4>
             </div>
+            <br />
             <div id="pitch3-img">
               <img src={Quiz} id="quiz-img" />
             </div>
@@ -105,8 +106,8 @@ class Home extends Component {
             </div>
             <div id="pitch4-text">
               <h4>
-                Your Viewing Bucket: FlixList will make sure your Entertainment
-                bucket is never empty.
+                FlixList will make sure your Entertainment
+                Bucket is never empty.
               </h4>
             </div>
           </div>

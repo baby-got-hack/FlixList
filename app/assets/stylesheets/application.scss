@@ -82,11 +82,11 @@
   height: 90vh;
   color: red;
   h1 {
-    padding: 100px 0 0 0;
+    padding: 100px 0 70px 0;
     font-size: 60px;
   }
   h2 {
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
   }
   h5 {
     margin: 55px 0 10px 0;
@@ -182,11 +182,11 @@
     display: flex;
     width: 600px;
     margin-right: 25px;
-    margin-left: 300px;
+    margin-left: 250px;
 
     #bucket-img {
       height: 250px;
-      width: 300px;
+      width: 350px;
       box-shadow: 11px 13px 26px 4px rgba(249,78,52,0.55);
     }
   }
