@@ -8,23 +8,10 @@ class Quiz extends Component {
     this.state = {
       genre: null,
       tv_show: null,
-      runtime: null,
-      release_date: null,
       submitted: false,
     };
     this.onChangeValueGenre = this.onChangeValueGenre.bind(this);
     this.onChangeValueType = this.onChangeValueType.bind(this);
-    this.onChangeValueReleaseDate = this.onChangeValueReleaseDate.bind(this);
-    this.onChangeValueRunTime = this.onChangeValueRunTime.bind(this);
-  }
-
-  onChangeValueReleaseDate(e) {
-    console.log(e.target.value);
-    this.setState({ release_date: e.target.value });
-  }
-  onChangeValueRuntime(e) {
-    console.log(e.target.value);
-    this.setState({ runtime: e.target.value });
   }
 
   onChangeValueGenre(e) {
@@ -38,11 +25,7 @@ class Quiz extends Component {
   }
 
   handleSubmit = () => {
-    this.props.populateBucket(
-      this.state.genre,
-      this.state.tv_show,
-      this.state.release_date
-    );
+    this.props.populateBucket(this.state.genre, this.state.tv_show);
     console.log("submitted");
     this.setState({ submitted: true });
   };
@@ -51,11 +34,11 @@ class Quiz extends Component {
     return (
       <div className="body-container">
         <div className="quiz-container">
-          <h2>Please Complete Your Entertainment Personality Quiz</h2>
+          <h1>Entertainment Personality Quiz</h1>
           <div id="question1">
             <Form onChange={this.onChangeValueType}>
               <FormGroup tag="fieldset">
-                <legend>Whatcha feeling today?... Movie or Tv Show?</legend>
+                <legend>Whatcha feeling today?... Movie or TV Show?</legend>
               </FormGroup>
               <FormGroup check>
                 <Input name="radio1" type="radio" value={"false"} />{" "}
@@ -92,7 +75,7 @@ class Quiz extends Component {
           </div>
 
           <div id="question3">
-            <Form onChange={this.onChangeValueReleaseDate}>
+            <Form>
               <FormGroup tag="fieldset">
                 <legend>How far back are we going?</legend>
               </FormGroup>
@@ -112,7 +95,7 @@ class Quiz extends Component {
           </div>
 
           <div id="question4">
-            <Form onChange={this.onChangeValueRunTime}>
+            <Form>
               <FormGroup tag="fieldset">
                 <legend>How long you got to watch?</legend>
               </FormGroup>
@@ -127,11 +110,13 @@ class Quiz extends Component {
             </Form>
           </div>
 
+        </div>
+        <div id="quiz-btn">
           <Button color="danger" onClick={this.handleSubmit}>
             Start Your Binge!
           </Button>
+          </div>
           {this.state.submitted && <Redirect to="/bucket" />}
-        </div>
       </div>
     );
   }
