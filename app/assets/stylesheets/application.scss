@@ -405,13 +405,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .login-background {
-  background-image: url("https://i.imgur.com/hfDLpQT.png");
+  background-image: url("https://i.imgur.com/pa109ja.jpg");
   background-size: cover;
   height: 100vh;
 }
 
 .signup-background {
-  background-image: url("https://i.imgur.com/jc4Vy1m.png");
+  background-image: url("https://i.imgur.com/DDOecbU.jpg");
   background-size: cover;
   height: 100vh;
 }
@@ -424,9 +424,14 @@ body::-webkit-scrollbar-thumb {
 
 .padding-devise {
   line-height: 20px;
-  padding: 15px;
+  padding: 25px;
 }
 
 .margin-devise {
-  margin: 10px;
+  margin: 25px;
+  font-size: 25px;
+}
+
+.border-devise {
+  border-radius: 50px;
 }
