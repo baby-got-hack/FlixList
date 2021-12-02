@@ -65,9 +65,6 @@ class Header extends Component {
                   <FontAwesomeIcon icon={faBars} size="2x" />
                 </DropdownToggle>
                 <DropdownMenu dark container="body">
-                  <NavLink to="/bucket">
-                    <DropdownItem>Entertainment Bucket</DropdownItem>
-                  </NavLink>
                   <NavLink to="/quiz">
                     <DropdownItem>Personality Quiz</DropdownItem>
                   </NavLink>
