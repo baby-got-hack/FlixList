@@ -435,3 +435,17 @@ body::-webkit-scrollbar-thumb {
 .border-devise {
   border-radius: 50px;
 }
+
+#not-found-page{
+  background-image: url("https://i.imgur.com/DdyJ96i.jpg?1");
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-weight: bold;
+    font-size: 5rem;
+  }
+}
