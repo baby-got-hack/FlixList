@@ -5,7 +5,7 @@ import Philip from "../assets/Philip.jpg";
 import Lillian3 from "../assets/Lillian3.png";
 import Sahtra from "../assets/Sahtra.jpg";
 import Elias4 from "../assets/Elias4.png";
-import LinkedIn from "../assets/icons8-linkedin-2-48.png";
+import LinkedIn from "../assets/linkedin-in-brands.svg";
 import {
   Card,
   CardGroup,

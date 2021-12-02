@@ -31,8 +31,8 @@ class App extends Component {
       .catch((errors) => console.log("favorites index errors:", errors));
   };
 
-  readMovies = (genre, tv_show) => {
-    fetch(`/movies?genre=${genre}&tv_show=${tv_show}`)
+  readMovies = (genre, tv_show, release_date, runtime) => {
+    fetch(`/movies?genre=${genre}&tv_show=${tv_show}&release_date=${release_date}&runtime=${runtime}`)
       .then((response) => response.json())
       .then((payload) => this.setState({ movies: payload }))
       .catch((errors) => console.log("movie index errors:", errors));
