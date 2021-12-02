@@ -39,7 +39,7 @@ class AboutUs extends Component {
                     <br />
                     ~Zaha Hadid
                   </CardText>
-                  <a href="https://www.linkedin.com/in/pdisidoro/">
+                  <a href="https://www.linkedin.com/in/pdisidoro/" target="_blank">
                     <img src={LinkedIn} className="linkedin-btn" />
                   </a>
                 </CardBody>
@@ -58,7 +58,7 @@ class AboutUs extends Component {
                     <br />
                     ~83oranges
                   </CardText>
-                  <a href="https://www.linkedin.com/in/lillian-mcgillivray-8118315/">
+                  <a href="https://www.linkedin.com/in/lillian-mcgillivray-8118315/" target="_blank">
                     <img src={LinkedIn} className="linkedin-btn" />
                   </a>
                 </CardBody>
@@ -77,7 +77,7 @@ class AboutUs extends Component {
                     <br />
                     ~@69possums420
                   </CardText>
-                  <a href="https://www.linkedin.com/in/Chawwh/">
+                  <a href="https://www.linkedin.com/in/Chawwh/" target="_blank">
                     <img src={LinkedIn} className="linkedin-btn" />
                   </a>
                 </CardBody>
@@ -95,7 +95,7 @@ class AboutUs extends Component {
                     <br />
                     ~Jessica Gaston
                   </CardText>
-                  <a href="https://www.linkedin.com/in/elias-zerai-b1693a134//Elias">
+                  <a href="https://www.linkedin.com/in/elias-zerai-b1693a134//Elias" target="_blank">
                     <img src={LinkedIn} className="linkedin-btn" />
                   </a>
                 </CardBody>
