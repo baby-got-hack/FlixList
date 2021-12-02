@@ -10,8 +10,8 @@ movies = [
     {
     title: 'Passengers',
     genre: 'drama',
-    release_date: '2016',
-    runtime: '116 min',
+    release_date: 2016,
+    runtime: 116,
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/SZkINrl.jpg'
@@ -20,8 +20,8 @@ movies = [
     {
     title: 'Dumb and Dumber',
     genre: 'comedy',
-    release_date: '1994',
-    runtime: '107 min',
+    release_date: 1994,
+    runtime: 107,
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/Gemyev9.png'
@@ -30,8 +30,8 @@ movies = [
     {
     title: 'No Time to Die',
     genre: 'action',
-    release_date: '2021',
-    runtime: '163 min',
+    release_date: 2021,
+    runtime: 163,
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/Ry2GcrV.png'
@@ -40,8 +40,8 @@ movies = [
     {
     title: 'Bad Candy',
     genre: 'horror',
-    release_date: '2021',
-    runtime: '103 min',
+    release_date: 2021,
+    runtime: 103,
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/0GmDvwp.png'
@@ -50,8 +50,8 @@ movies = [
     {
     title: 'Indiana Jones Temple of Doom',
     genre: 'action',
-    release_date: '1984',
-    runtime: '118 min',
+    release_date: 1984,
+    runtime: 118,
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/B4ZGw5c.png'
@@ -60,8 +60,8 @@ movies = [
     {
     title: '1917',
     genre: 'action',
-    release_date: '2019',
-    runtime: '119 min',
+    release_date: 2019,
+    runtime: 119,
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/TVlDN9O.png'
@@ -70,8 +70,8 @@ movies = [
     {
     title: "Fuerris Bueller's Day Off",
     genre: 'comedy',
-    release_date: '1986',
-    runtime: '103 min',
+    release_date: 1986,
+    runtime: 103,
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/79WneRT.png'
@@ -80,8 +80,8 @@ movies = [
     {
     title: 'Free Guy',
     genre: 'comedy',
-    release_date: '2021',
-    runtime: '115 min',
+    release_date: 2021,
+    runtime: 115,
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/fW2hinK.png'
@@ -90,8 +90,8 @@ movies = [
     {
     title: 'Saturday Night Fever',
     genre: 'drama',
-    release_date: '1977',
-    runtime: '118 min',
+    release_date: 1977,
+    runtime: 118,
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/e6ft157.png'
@@ -100,8 +100,8 @@ movies = [
     {
     title: 'House of Gucci',
     genre: 'drama',
-    release_date: '2021',
-    runtime: '157 min',
+    release_date: 2021,
+    runtime: 157,
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/5PnB7n3.png'
@@ -110,8 +110,8 @@ movies = [
     {
     title: 'Nightmare on Elm Street 3',
     genre: 'horror',
-    release_date: '1987',
-    runtime: '95 min',
+    release_date: 1987,
+    runtime: '95 ',
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/daPYK6m.png'
@@ -120,8 +120,8 @@ movies = [
     {
         title: 'The Hangover Part II',
         genre: 'comedy',
-        release_date: '2011',
-        runtime: '102 min',
+        release_date: 2011,
+        runtime: 102,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/9f8i83k.png'
@@ -130,8 +130,8 @@ movies = [
     {
         title: 'Ted',
         genre: 'comedy',
-        release_date: '2012',
-        runtime: '106 min',
+        release_date: 2012,
+        runtime: '106 ',
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/lHsPozP.png'
@@ -140,8 +140,8 @@ movies = [
     {
         title: 'Meet the Fockers',
         genre: 'comedy',
-        release_date: '2004',
-        runtime: '114 min',
+        release_date: 2004,
+        runtime: 114,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/Mi8Go0f.png'
@@ -150,8 +150,8 @@ movies = [
     {
         title: 'Mad Max: Fury Road',
         genre: 'action',
-        release_date: '2015',
-        runtime: '120 min',
+        release_date: 2015,
+        runtime: 120,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/H5a6O2k.png'
@@ -160,8 +160,8 @@ movies = [
     {
         title: 'John Wick',
         genre: 'action',
-        release_date: '2014',
-        runtime: '101 min',
+        release_date: 2014,
+        runtime: 101,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/0gauow7.png'
@@ -170,8 +170,8 @@ movies = [
     {
         title: 'Sicario',
         genre: 'action',
-        release_date: '2015',
-        runtime: '121 min',
+        release_date: 2015,
+        runtime: 121,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/CHE0BVS.png'
@@ -180,8 +180,8 @@ movies = [
     {
         title: 'The Conjuring',
         genre: 'horror',
-        release_date: '2013',
-        runtime: '112 min',
+        release_date: 2013,
+        runtime: 112,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/lmO47dZ.png'
@@ -190,8 +190,8 @@ movies = [
     {
         title: 'The Exorcist',
         genre: 'horror',
-        release_date: '1973',
-        runtime: '121 min',
+        release_date: 1973,
+        runtime: 121,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/C7yvJnI.png'
@@ -200,8 +200,8 @@ movies = [
     {
         title: 'The Shining',
         genre: 'horror',
-        release_date: '1980',
-        runtime: '146 min',
+        release_date: 1980,
+        runtime: 146,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/vgoLrOG.png'
@@ -210,8 +210,8 @@ movies = [
     {
         title: 'Good Will Hunting',
         genre: 'drama',
-        release_date: '1997',
-        runtime: '126 min',
+        release_date: 1997,
+        runtime: 126,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/iThkme5.png'
@@ -220,8 +220,8 @@ movies = [
     {
         title: 'Parasite',
         genre: 'drama',
-        release_date: '2019',
-        runtime: '132 min',
+        release_date: 2019,
+        runtime: 132,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/k8qXhb6.png'
@@ -230,8 +230,8 @@ movies = [
     {
         title: 'The Shawshank Redemption',
         genre: 'drama',
-        release_date: '1994',
-        runtime: '142 min',
+        release_date: 1994,
+        runtime: 142,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/7tPMgin.png'
@@ -240,8 +240,8 @@ movies = [
     {
         title: 'A Beautiful Mind',
         genre: 'drama',
-        release_date: '2001',
-        runtime: '135 min',
+        release_date: 2001,
+        runtime: 135,
         tv_show: false,
         seasons: 0,
         img: 'https://i.imgur.com/oz9DLkX.png'
@@ -251,8 +251,8 @@ movies = [
     {
     title: 'Misery',
     genre: 'horror',
-    release_date: '1990',
-    runtime: '107 min',
+    release_date: 1990,
+    runtime: 107,
     tv_show: false,
     seasons: 0,
     img: 'https://i.imgur.com/Ko6vI4p.png'
@@ -261,8 +261,8 @@ movies = [
     {
     title: 'Miami Vice',
     genre: 'action',
-    release_date: '1984',
-    runtime: '48 min',
+    release_date: 1984,
+    runtime: 48,
     tv_show: true,
     seasons: 5,
     img: 'https://i.imgur.com/29lQ06o.png'
@@ -271,8 +271,8 @@ movies = [
     {
     title: '24',
     genre: 'action',
-    release_date: '2001',
-    runtime: '44 min',
+    release_date: 2001,
+    runtime: 44,
     tv_show: true,
     seasons: 9,
     img: 'https://i.imgur.com/OBE4YXB.png'
@@ -281,8 +281,8 @@ movies = [
     {
     title: 'Loki',
     genre: 'action',
-    release_date: '2021',
-    runtime: '54 min',
+    release_date: 2021,
+    runtime: 54,
     tv_show: true,
     seasons: 1,
     img: 'https://i.imgur.com/piI7ZqG.png'
@@ -291,8 +291,8 @@ movies = [
     {
     title: 'Threes Company',
     genre: 'comedy',
-    release_date: '1976',
-    runtime: '30 min',
+    release_date: 1976,
+    runtime: 30,
     tv_show: true,
     seasons: 8,
     img: 'https://i.imgur.com/XLnY5Wr.png'
@@ -301,8 +301,8 @@ movies = [
     {
     title: 'Two and a Half Men',
     genre: 'comedy',
-    release_date: '2003',
-    runtime: '22 min',
+    release_date: 2003,
+    runtime: 22,
     tv_show: true,
     seasons: 12,
     img: 'https://i.imgur.com/69j6T86.png'
@@ -311,8 +311,8 @@ movies = [
     {
     title: "Clarkson's Farm",
     genre: 'comedy',
-    release_date: '2021',
-    runtime: '45 min',
+    release_date: 2021,
+    runtime: 45,
     tv_show: true,
     seasons: 1,
     img: 'https://i.imgur.com/j3NJ4hN.png'
@@ -322,7 +322,7 @@ movies = [
     title: "Charlie's Angels",
     genre: 'drama',
     release_date: '1976',
-    runtime: '60 min',
+    runtime: 60,
     tv_show: true,
     seasons: 5,
     img: 'https://i.imgur.com/70Sem1w.png'
@@ -331,8 +331,8 @@ movies = [
     {
     title: 'The X Files',
     genre: 'drama',
-    release_date: '1993',
-    runtime: '45 min',
+    release_date: 1993,
+    runtime: 45,
     tv_show: true,
     seasons: 11,
     img: 'https://i.imgur.com/fwbIiYM.png'
@@ -341,8 +341,8 @@ movies = [
     {
     title: 'Squid Game',
     genre: 'drama',
-    release_date: '2021',
-    runtime: '55 min',
+    release_date: 2021,
+    runtime: 55,
     tv_show: true,
     seasons: 1,
     img: 'https://i.imgur.com/vxo2zMy.png'
@@ -351,8 +351,8 @@ movies = [
     {
     title: 'Castle Rock',
     genre: 'horror',
-    release_date: '2018',
-    runtime: '60 min',
+    release_date: 2018,
+    runtime: 60,
     tv_show: true,
     seasons: 2,
     img: 'https://i.imgur.com/hEs6AfT.png'
@@ -361,8 +361,8 @@ movies = [
     {
     title: 'Unsolved Mysteries',
     genre: 'horror',
-    release_date: '1987',
-    runtime: '60 min',
+    release_date: 1987,
+    runtime: 60,
     tv_show: true,
     seasons: 16,
     img: 'https://i.imgur.com/FunXxZt.png'
@@ -371,8 +371,8 @@ movies = [
     {
     title: 'I Know What you did Last Summer',
     genre: 'horror',
-    release_date: '2021',
-    runtime: '60 min',
+    release_date: 2021,
+    runtime: 60,
     tv_show: true,
     seasons: 1,
     img: 'https://i.imgur.com/YVPWci8.png'
@@ -381,8 +381,8 @@ movies = [
     {
         title: 'Peaky Blinders',
         genre: 'Drama',
-        release_date: '2013',
-        runtime: '60 min',
+        release_date: 2013,
+        runtime: 60,
         tv_show: true,
         seasons: 5,
         img: 'https://i.imgur.com/2CJOHtv.png'
@@ -391,8 +391,8 @@ movies = [
     {
         title: 'Yellowstone',
         genre: 'Drama',
-        release_date: '2018',
-        runtime: '60 min',
+        release_date: 2018,
+        runtime: 60,
         tv_show: true,
         seasons: 4,
         img: 'https://i.imgur.com/LE1Ufca.png'
@@ -401,8 +401,8 @@ movies = [
     {
         title: 'Suits',
         genre: 'Drama',
-        release_date: '2011',
-        runtime: '42 min',
+        release_date: 2011,
+        runtime: 42,
         tv_show: true,
         seasons: 9,
         img: 'https://i.imgur.com/SHLFm6j.png'
@@ -411,8 +411,8 @@ movies = [
     {
         title: 'Vikings',
         genre: 'Action',
-        release_date: '2013',
-        runtime: '44 min',
+        release_date: 2013,
+        runtime: 44,
         tv_show: true,
         seasons: 5,
         img: 'https://i.imgur.com/h03Alqv.png'
@@ -421,8 +421,8 @@ movies = [
     {
         title: 'The Boys',
         genre: 'Action',
-        release_date: '2019',
-        runtime: '51 min',
+        release_date: 2019,
+        runtime: 51,
         tv_show: true,
         seasons: 2,
         img: 'https://i.imgur.com/CrxmBun.png'
@@ -431,8 +431,8 @@ movies = [
     {
         title: 'Watchmen',
         genre: 'Action',
-        release_date: '2019',
-        runtime: '58 min',
+        release_date: 2019,
+        runtime: 58,
         tv_show: true,
         seasons: 1,
         img: 'https://i.imgur.com/swxl2YG.png'
@@ -441,8 +441,8 @@ movies = [
     {
         title: 'American Horror Story',
         genre: 'Horror',
-        release_date: '2011',
-        runtime: '54 min',
+        release_date: 2011,
+        runtime: 54,
         tv_show: true,
         seasons: 10,
         img: 'https://i.imgur.com/RhNExee.png'
@@ -451,8 +451,8 @@ movies = [
     {
         title: 'Stranger Things',
         genre: 'Horror',
-        release_date: '2016',
-        runtime: '59 min',
+        release_date: 2016,
+        runtime: 59,
         tv_show: true,
         seasons: 3,
         img: 'https://i.imgur.com/sENaOpW.png'
@@ -462,7 +462,7 @@ movies = [
         title: 'The Outsider',
         genre: 'Horror',
         release_date: '2020',
-        runtime: '53 min',
+        runtime: 53,
         tv_show: true,
         seasons: 1,
         img: 'https://i.imgur.com/Qn8sodN.png'
@@ -471,8 +471,8 @@ movies = [
     {
         title: 'Ted Lasso',
         genre: 'Comedy',
-        release_date: '2020',
-        runtime: '30 min',
+        release_date: 2020,
+        runtime: 30,
         tv_show: true,
         seasons: 2,
         img: 'https://i.imgur.com/kpB0q2L.png'
@@ -482,7 +482,7 @@ movies = [
         title: 'Brooklyn nine-nine',
         genre: 'Comedy',
         release_date: '2013',
-        runtime: '22 min',
+        runtime: 22,
         tv_show: true,
         seasons: 8,
         img: 'https://i.imgur.com/dfOs5hs.png'
@@ -491,8 +491,8 @@ movies = [
     {
         title: 'its Always Sunny in Philadelphia',
         genre: 'Comedy',
-        release_date: '2005',
-        runtime: '21 min',
+        release_date: 2005,
+        runtime: 21,
         tv_show: true,
         seasons: 15,
         img: 'https://i.imgur.com/yiHnzba.png'
