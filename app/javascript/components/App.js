@@ -8,7 +8,6 @@ import Quiz from "./pages/Quiz";
 import Bucket from "./pages/Bucket";
 import NotFound from "./pages/NotFound";
 
-
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -17,7 +16,7 @@ class App extends Component {
     this.state = {
       movies: [],
       favorites: [],
-      fave_data: []
+      fave_data: [],
     };
   }
   componentDidMount() {
@@ -59,7 +58,10 @@ class App extends Component {
         }
         return response.json();
       })
-      .then(() => this.readFavorites())
+      .then(
+        () => this.readFavorites(),
+        () => this.readFavoriteMovieData()
+      )
       .catch((errors) => console.log("create favorite errors:", errors));
   };
 
@@ -69,7 +71,7 @@ class App extends Component {
       headers: {
         "Content-Type": "application/json",
       },
-      method: "DELETE"
+      method: "DELETE",
     })
       .then((response) => {
         if (response.status === 422) {
@@ -134,7 +136,7 @@ class App extends Component {
             )}
             <Route component={NotFound} />
           </Switch>
-          
+
           <Footer />
         </Router>
       </>
